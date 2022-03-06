@@ -168,6 +168,7 @@ main {
 }
 
 .menu__link {
+    align-self: center;
     display: inline-block;
     font-size: 20px;
     padding: 10px;
@@ -187,6 +188,7 @@ main {
 }
 
 .logo {
+    border-radius: 15px;
     width: 35px;
     height: 35px;
     z-index: 10;
