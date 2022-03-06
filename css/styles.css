@@ -212,3 +212,18 @@ span a {
     font-size: 18px;
     font-family: 'Kurale', serif;
 }
+
+
+::-webkit-scrollbar {
+    width: 11px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border-radius: 100px;
+}
+::-webkit-scrollbar-track {
+    background: var(--MBlack);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--orange);
+}
