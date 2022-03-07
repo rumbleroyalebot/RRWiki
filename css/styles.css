@@ -1,4 +1,8 @@
-/* --- General Information --- */
+/* --- Fonts Importing --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=Kurale&family=Roboto+Mono:wght@500&family=Rosario:wght@700&display=swap');
+
+/* --- General Rules --- */
 
 :root {
 	--orange: #ff9000; /* --- For code --- */
@@ -10,10 +14,19 @@
     --white: #ffffff;
 }
 
-/* --- Fonts Importing --- */
-
-@import url('https://fonts.googleapis.com/css2?family=Alef&family=Kurale&family=Roboto+Mono:wght@500&family=Rosario:wght@700&display=swap');
-/* ---- Base Rules ---- */
+::-webkit-scrollbar {
+    width: 11px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border-radius: 100px;
+}
+::-webkit-scrollbar-track {
+    background: var(--MBlack);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--orange);
+}
 
 html {
   scroll-behavior: smooth;
@@ -22,8 +35,6 @@ html {
     background: var(--gold);
     color: #121213;
 }
-
-
 
 body {
     background: var(--MBlack);
@@ -39,7 +50,7 @@ h1 {
 }
 
 
-h2 {
+.h2 {
     margin-top: 0px;
     text-decoration: underline #ffbc01;
     font-family: 'Rosario', sans-serif;
@@ -65,12 +76,6 @@ a {
     text-decoration: underline;
 }
 
-span {
-    font-size: 20px;
-    color: var(--orange);
-    font-family: 'Alef', sans-serif; 
-}
-
 ul {
     font-size: 20px;
     color: var(--silver);
@@ -78,17 +83,17 @@ ul {
     margin-bottom: 1em;
 }
 
-b {
-	font-weight: normal;
-}
-
 .gold {
     color: var(--gold);
 }
 
-.code {
+.orange {
 	color: var(--orange);
-    background: rgb(219, 204, 170);
+}
+
+.code {
+	color: var(--BBlack);
+    background: var(--white);
     font-family: 'Arial';
 }
 
@@ -113,6 +118,25 @@ b {
     color: var(--gold)
 }
 
+.main__header {
+	align-self: center;
+    display: inline-flex;
+}
+
+.heroBadge {
+	align-self: center;
+    display: inline-block;
+	width: 50px;
+    height: 50px;
+}
+
+.layer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 /* ---- Layout Rules ---- */
 main {
@@ -140,21 +164,6 @@ main {
 
 .socials:hover {
 	color: var(--white);
-}
-
-/* Spacer Style */
-
-.spacer {
-    width: 960px;
-    height: 300px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.layer1 {
-    background-image: url("/pics/layer1.png")
 }
 
 /* Header Styles */
@@ -188,15 +197,10 @@ main {
 }
 
 .logo {
-    border-radius: 15px;
-    width: 35px;
-    height: 35px;
+    border-radius: 10px;
+    width: 32px;
+    height: 32px;
     z-index: 10;
-}
-
-#homeImg {
-
-    border-radius: 0%;
 }
 
 /* Footer Styles */
@@ -211,19 +215,4 @@ span a {
     color: #ccc;
     font-size: 18px;
     font-family: 'Kurale', serif;
-}
-
-
-::-webkit-scrollbar {
-    width: 11px;
-}
-::-webkit-scrollbar-thumb {
-    background: var(--gold);
-    border-radius: 100px;
-}
-::-webkit-scrollbar-track {
-    background: var(--MBlack);
-}
-::-webkit-scrollbar-thumb:hover{
-    background: var(--orange);
 }
