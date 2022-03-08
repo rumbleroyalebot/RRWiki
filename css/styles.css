@@ -38,15 +38,24 @@ html {
 
 body {
     background: var(--MBlack);
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* Typeography General*/
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
 h1 {
-    font-size: 50px;
-    color: var(--silver);
+    font-size: 75px;
+    color: var(--gold);
     font-family: 'Rosario', sans-serif;
     margin-left: 1em;
+    margin-bottom: 0px;
 }
 
 
@@ -120,22 +129,22 @@ ul {
 
 .main__header {
 	align-self: center;
+    align-items: center;
     display: inline-flex;
 }
 
-.heroBadge {
+.win {
 	align-self: center;
     display: inline-block;
-	width: 50px;
-    height: 50px;
+	width: 125px;
+    height: 125px;
 }
 
 .layer {
     aspect-ratio: 960/300;
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* ---- Layout Rules ---- */
