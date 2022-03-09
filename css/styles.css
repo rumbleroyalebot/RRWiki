@@ -51,10 +51,10 @@ body {
 }
 
 h1 {
-    font-size: 75px;
+    font-size: 60px;
     color: var(--gold);
     font-family: 'Rosario', sans-serif;
-    margin-left: 1em;
+    margin-left: 0.7em;
     margin-bottom: 0px;
 }
 
@@ -141,7 +141,7 @@ ul {
 }
 
 .layer {
-    aspect-ratio: 960/300;
+aspect-ratio: 960/300;
     width: 100%;
     margin: 0px;
     padding: 0px;
