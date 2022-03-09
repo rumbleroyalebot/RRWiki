@@ -139,7 +139,8 @@ ul {
 }
 
 .layer {
-aspect-ratio: 960/300;
+    aspect-ratio: 960/300;
+    opacity: 0.8;
     width: 100%;
     margin: 0px;
     padding: 0px;
