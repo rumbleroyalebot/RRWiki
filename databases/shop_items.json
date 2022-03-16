@@ -1,0 +1,484 @@
+{
+    "skins": [
+        {
+            "item": "knife",
+            "skin": "frozen",
+            "era": "modern",
+            "cost": "gems",
+            "price": 100
+        },
+        {
+            "item": "machete",
+            "skin": "frozen",
+            "era": "classic",
+            "cost": "gems",
+            "price": 100
+        },
+        {
+            "item": "bow",
+            "skin": "frozen",
+            "era": "classic",
+            "cost": "gems",
+            "price": 100
+        },
+        {
+            "item": "taser",
+            "skin": "frozen",
+            "era": "modern",
+            "cost": "gems",
+            "price": 100
+        },
+        {
+            "item": "blaster",
+            "skin": "frozen",
+            "era": "futuristic",
+            "cost": "gems",
+            "price": 100
+        },
+        {
+            "item": "sickle",
+            "skin": "frozen",
+            "era": "pirate",
+            "cost": "gems",
+            "price": 100
+        },
+        {
+            "item": "lasergun",
+            "skin": "frozen",
+            "era": "futuristic",
+            "cost": "gems",
+            "price": 100
+        },
+        {
+            "item": "shuriken",
+            "skin": "frozen",
+            "era": "samurai",
+            "cost": "gems",
+            "price": 100
+        },
+        {
+            "item": "cannon",
+            "skin": "frozen",
+            "era": "pirate",
+            "cost": "gems",
+            "price": 100
+        },
+        {
+            "item": "axe",
+            "skin": "devil",
+            "era": "classic",
+            "cost": "gold",
+            "price": 50000
+        },
+        {
+            "item": "pistol",
+            "skin": "devil",
+            "era": "modern",
+            "cost": "gold",
+            "price": 50000
+        },
+        {
+            "item": "dagger",
+            "skin": "devil",
+            "era": "classic",
+            "cost": "gold",
+            "price": 50000
+        },
+        {
+            "item": "sniper",
+            "skin": "devil",
+            "era": "modern",
+            "cost": "gold",
+            "price": 50000
+        },
+        {
+            "item": "robot",
+            "skin": "devil",
+            "era": "futuristic",
+            "cost": "gold",
+            "price": 50000
+        },
+        {
+            "item": "sword",
+            "skin": "devil",
+            "era": "futuristic",
+            "cost": "gold",
+            "price": 50000
+        },
+        {
+            "item": "blunderbuss",
+            "skin": "devil",
+            "era": "pirate",
+            "cost": "gold",
+            "price": 50000
+        },
+        {
+            "item": "dagger",
+            "skin": "vintage",
+            "era": "classic",
+            "cost": "gold",
+            "price": 20000
+        },
+        {
+            "item": "blaster",
+            "skin": "vintage",
+            "era": "futuristic",
+            "cost": "gold",
+            "price": 20000
+        },
+        {
+            "item": "sniper",
+            "skin": "vintage",
+            "era": "modern",
+            "cost": "gold",
+            "price": 20000
+        },
+        {
+            "item": "rocket",
+            "skin": "vintage",
+            "era": "modern",
+            "cost": "gold",
+            "price": 20000
+        },
+        {
+            "item": "crossbow",
+            "skin": "vintage",
+            "era": "medieval",
+            "cost": "gold",
+            "price": 20000
+        },
+        {
+            "item": "bomb",
+            "skin": "vintage",
+            "era": "pirate",
+            "cost": "gold",
+            "price": 20000
+        },
+        {
+            "item": "katana",
+            "skin": "vintage",
+            "era": "samurai",
+            "cost": "gold",
+            "price": 20000
+        },
+        {
+            "item": "tessen",
+            "skin": "vintage",
+            "era": "samurai",
+            "cost": "gold",
+            "price": 20000
+        },
+        {
+            "item": "knife",
+            "skin": "gummy",
+            "era": "modern",
+            "cost": "gems",
+            "price": 150
+        },
+        {
+            "item": "sniper",
+            "skin": "gummy",
+            "era": "modern",
+            "cost": "gems",
+            "price": 150
+        },
+        {
+            "item": "machete",
+            "skin": "gummy",
+            "era": "classic",
+            "cost": "gems",
+            "price": 150
+        },
+        {
+            "item": "robot",
+            "skin": "gummy",
+            "era": "futuristic",
+            "cost": "gems",
+            "price": 150
+        },
+        {
+            "item": "horse",
+            "skin": "gummy",
+            "era": "medieval",
+            "cost": "gems",
+            "price": 150
+        },
+        {
+            "item": "blowpipe",
+            "skin": "gummy",
+            "era": "samurai",
+            "cost": "gems",
+            "price": 150
+        },
+        {
+            "item": "mace",
+            "skin": "sun",
+            "era": "medieval",
+            "cost": "gems",
+            "price": 80
+        },
+        {
+            "item": "lance",
+            "skin": "sun",
+            "era": "medieval",
+            "cost": "gems",
+            "price": 80
+        },
+        {
+            "item": "halberd",
+            "skin": "sun",
+            "era": "medieval",
+            "cost": "gems",
+            "price": 80
+        },
+        {
+            "item": "spear",
+            "skin": "sun",
+            "era": "classic",
+            "cost": "gems",
+            "price": 80
+        },
+        {
+            "item": "sword",
+            "skin": "sun",
+            "era": "futuristic",
+            "cost": "gems",
+            "price": 80
+        },
+        {
+            "item": "axe",
+            "skin": "tactical",
+            "era": "classic",
+            "cost": "gold",
+            "price": 30000
+        },
+        {
+            "item": "emp",
+            "skin": "tactical",
+            "era": "futuristic",
+            "cost": "gold",
+            "price": 30000
+        },
+        {
+            "item": "pistol",
+            "skin": "tactical",
+            "era": "modern",
+            "cost": "gold",
+            "price": 30000
+        },
+        {
+            "item": "spear",
+            "skin": "tactical",
+            "era": "classic",
+            "cost": "gold",
+            "price": 30000
+        },
+        {
+            "item": "shield",
+            "skin": "tactical",
+            "era": "medieval",
+            "cost": "gold",
+            "price": 30000
+        },
+        {
+            "item": "crossbow",
+            "skin": "sakura",
+            "era": "medieval",
+            "cost": "gold",
+            "price": 60000
+        },
+        {
+            "item": "katana",
+            "skin": "sakura",
+            "era": "samurai",
+            "cost": "gold",
+            "price": 60000
+        },
+        {
+            "item": "yumi",
+            "skin": "sakura",
+            "era": "samurai",
+            "cost": "gold",
+            "price": 60000
+        },
+        {
+            "item": "nunchaku",
+            "skin": "sakura",
+            "era": "samurai",
+            "cost": "gold",
+            "price": 60000
+        },
+        {
+            "item": "hammer",
+            "skin": "copper",
+            "era": "steampunk",
+            "cost": "gems",
+            "price": 100
+        },
+        {
+            "item": "cane",
+            "skin": "copper",
+            "era": "steampunk",
+            "cost": "gems",
+            "price": 100
+        },
+        {
+            "item": "musket",
+            "skin": "copper",
+            "era": "steampunk",
+            "cost": "gems",
+            "price": 100
+        },
+        {
+            "item": "harpoon",
+            "skin": "copper",
+            "era": "steampunk",
+            "cost": "gems",
+            "price": 100
+        },
+        {
+            "item": "cutlass",
+            "skin": "copper",
+            "era": "pirate",
+            "cost": "gems",
+            "price": 100
+        },
+        {
+            "item": "wolf",
+            "skin": "moon",
+            "era": "classic",
+            "cost": "gold",
+            "price": 100000
+        },
+        {
+            "item": "bat",
+            "skin": "lightning",
+            "era": "modern",
+            "cost": "gold",
+            "price": 20000
+        },
+        {
+            "item": "rocket",
+            "skin": "neon",
+            "era": "modern",
+            "cost": "gems",
+            "price": 200
+        },
+        {
+            "item": "spear",
+            "skin": "crystal",
+            "era": "classic",
+            "cost": "gems",
+            "price": 120
+        },
+        {
+            "item": "emp",
+            "skin": "tesla",
+            "era": "futuristic",
+            "cost": "gold",
+            "price": 70000
+        },
+        {
+            "item": "lasergun",
+            "skin": "titan",
+            "era": "futuristic",
+            "cost": "gems",
+            "price": 250
+        },
+        {
+            "item": "drone",
+            "skin": "ray",
+            "era": "futuristic",
+            "cost": "gems",
+            "price": 90
+        },
+        {
+            "item": "horse",
+            "skin": "unicorn",
+            "era": "medieval",
+            "cost": "gems",
+            "price": 500
+        },
+        {
+            "item": "parrot",
+            "skin": "ghost",
+            "era": "pirate",
+            "cost": "gold",
+            "price": 150000
+        }
+    ],
+    "event": [
+    ],
+    "old_event": [
+        {
+            "item": "horse",
+            "skin": "zombie",
+            "era": "medieval",
+            "cost": "gold",
+            "price": 50000
+        },
+        {
+            "item": "lance",
+            "skin": "bloody",
+            "era": "medieval",
+            "cost": "gold",
+            "price": 50000
+        },
+        {
+            "item": "shield",
+            "skin": "pumpkin",
+            "era": "medieval",
+            "cost": "gold",
+            "price": 50000
+        },
+        {
+            "item": "dagger",
+            "skin": "pine",
+            "era": "classic",
+            "cost": "gold",
+            "price": 1
+        },
+        {
+            "item": "lance",
+            "skin": "candy",
+            "era": "medieval",
+            "cost": "gems",
+            "price": 100
+        },
+        {
+            "item": "bomb",
+            "skin": "snowglobe",
+            "era": "pirate",
+            "cost": "gold",
+            "price": 70000
+        },
+        {
+            "item": "robot",
+            "skin": "snowman",
+            "era": "futuristic",
+            "cost": "gems",
+            "price": 300
+        },
+        {
+            "item": "sniper",
+            "skin": "gingerbread",
+            "era": "modern",
+            "cost": "gold",
+            "price": 30000
+        },
+        {
+            "item": "horse",
+            "skin": "reindeer",
+            "era": "medieval",
+            "cost": "gems",
+            "price": 200
+        },
+        {
+            "item": "rocket",
+            "skin": "firework",
+            "era": "modern",
+            "cost": "gold",
+            "price": 10000
+        }
+    ]
+}
