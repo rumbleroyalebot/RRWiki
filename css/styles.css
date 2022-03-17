@@ -99,9 +99,11 @@ ul {
 }
 
 .code {
-	color: var(--BBlack);
-    background: var(--white);
-    font-family: 'Arial';
+	color: var(--orange);
+}
+
+.silver {
+	color: var(--silver);
 }
 
 #top {
@@ -196,7 +198,7 @@ main {
 
 .page__header .menu__link:hover {
     background: var(--BBlack);
-    color: var(--white);
+    color: var(--orange);
 }
 
 #current {
