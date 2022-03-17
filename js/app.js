@@ -27,15 +27,14 @@ fetch("databases/shop_items.json")
   .then((data) => {
     const skins = data["skins"];
 
-    for (var i = 0; i < skins.length; i++) {
-      document.getElementById("itemList").innerHTML =
-        document.getElementById("itemList").innerHTML + 
-        `<p><span class="gold">Name: ${skins[i].item}</span></p>`
-        ("Skin: " + skins[i].skin + "<br />") +
-        ("Era: " + skins[i].era + "<br />") +
-        ("Cost: " + skins[i].cost +) +
-        (skins[i].price + "<br />");
+  for (var i = 0; i < skins.length; i++) {
+  console.log(skins[i]);
+  document.getElementById("listdiv").innerHTML =
+    document.getElementById("listdiv").innerHTML +
+    ("<p> Name:<span class = 'gold'>" + skins[i].name + "</span> <br>") +
+    ("Skin: " + skins[i].skin + "<br>") +
+    ("Era: " + skins[i].era + "<br>") +
+    ("Price: " + skins[i].price + skins[i].cost + "</p>");
   }
 });
-
 
