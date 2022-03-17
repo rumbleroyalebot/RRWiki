@@ -29,8 +29,8 @@ fetch("databases/shop_items.json")
 
   for (var i = 0; i < skins.length; i++) {
   console.log(skins[i]);
-  document.getElementById("listdiv").innerHTML =
-    document.getElementById("listdiv").innerHTML +
+  document.getElementById("itemList").innerHTML =
+    document.getElementById("itemList").innerHTML +
     ("<p> Name:<span class = 'gold'>" + skins[i].name + "</span> <br>") +
     ("Skin: " + skins[i].skin + "<br>") +
     ("Era: " + skins[i].era + "<br>") +
