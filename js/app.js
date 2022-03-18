@@ -66,15 +66,11 @@ fetch("databases/banners.json")
     return resp.json();
   })
   .then((data) => {
-    const banners = data;
-
-  for (var i = 0; i < data.length; i++) {
-  console.log(data[0]);
-  document.getElementById("banners").innerHTML =
-  obj.name + " " + obj.name; 
-    document.getElementById("banners").innerHTML +
-    ("<p> Name: <span class = 'gold'>" + data[i].name + "<br>" + data[i].image + "</span></p>")
-  }
+    banner = Object.getOwnPropertyNames('0');
+    console.log(banner)
+    document.getElementById("banners").innerHTML =
+    ("<p>Name:" + banner["name"] + "<br>Image:" + banner["image"] + "</p>");
+     
 });
 
 
