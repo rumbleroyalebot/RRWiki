@@ -9,7 +9,7 @@
 	--gold: #ffbc01; /* --- For highlighting --- */
 	--silver: #BDC3C7; /* --- Normal text --- */
     --TBlack: #1f1f1f; /* --- Top Black --- */
-    --MBlack: #121212; /* --- Middle Black --- */
+    --MBlack: #121214; /* --- Middle Black --- */
     --BBlack: #000000; /* --- Bottom Black --- */
     --white: #ffffff;
 }
@@ -81,10 +81,15 @@ p {
 
 a {
     text-decoration: underline;
+    transition: color 0.4s;
+}
+
+a:hover {
+    color: var(--orange)
 }
 
 ul {
-    font-size: 20px;
+    font-size: 25px;
     color: var(--silver);
     font-family: 'Alef', sans-serif;
     margin-bottom: 1em;
@@ -120,6 +125,7 @@ ul {
     border-radius: 10px;
     font-size: 25px;
     text-decoration: none;
+    transition: color 0.4s;
   }
 
 #top:hover {
@@ -167,7 +173,7 @@ main {
 /* ---- Icons Rules ---- */
 .socials {
   font-size: 20px;
-  color: #ffbc01;
+  color: var(--gold);
   transition: color 0.4s;
   text-decoration: none;
 }

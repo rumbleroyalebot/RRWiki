@@ -1,6 +1,6 @@
 // Function used for the "back top top" button:
 
-mybutton = document.getElementById("top");
+let mybutton = document.getElementById("top");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -14,6 +14,7 @@ function toTop() {
   document.body.scrollTop = 0; // Safari
   document.documentElement.scrollTop = 0; // Chrome and Firefox
 }
+
 
 
 // Importing JSON files:
@@ -72,6 +73,3 @@ fetch("databases/banners.json")
     ("<p>Name:" + banner["name"] + "<br>Image:" + banner["image"] + "</p>");
      
 });
-
-
-

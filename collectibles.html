@@ -25,11 +25,9 @@
         <a href="leaderboard.html" class="menu__link">Leaderboard</a>
     </header>
 
-    <button onclick="toTop()" id="top" title="Back to top"><ion-icon name="chevron-up-sharp"></ion-icon></button>
-
 
     <main>
-        
+        <button onclick="toTop()" id="top" title="Back to top"><ion-icon name="chevron-up-sharp"></ion-icon></button>
         <section class="hero">
           <h1 class="main__header">Rumble Royale
               <img draggable="false" src="pics/win.png" alt="Rumble Royale Logo" class="win"></img>
@@ -41,22 +39,24 @@
 
         <section>
             <div class="landing__container">
-                <h3>A list of the items that can be unlocked:</h3>
+                <span class="h2">List of unlockable items:</span>
                 <ul>
-	                <li>Eras</li>
-						Eras are themes/place in which the players play the Rumble Royale. Everyone starts in the classic era, which is very similar to the hunger games. Each era has its own set of phrases, weapons and loot. Unlocking new eras from backpacks adds a lot more loot options, and even better; it lets you start a Rumble Royale session for that era.
-					<li>Items and Phrases</li>
-						New items and new phrases, which means your next Rumble Royale games will be even more entertaining. Basically, when unlocking a weapon/item from a backpack, that weapon becomes available to you in all your future Royal Rumbles sessions. Next to items you have phrases that you can unlock to make cooler, funnier or weirder moves in-game!
+	                <li><a class="gold" href="#itemListStart">Items</a></li>
+					<li><a class="gold" href="#phrasesStart">Phrases</a></li>
+                    <li><a class="gold" href="#bannersStart">Banners</a></li>
 					<li>Titles</li>
-						Titles are purely cosmetics, they will show next to your name when you are doing an action in a Rumble Royale session.
 	            </ul>
-                <h3>List of all Shop Items:</h3>
+                <span class="h2">List of all collectibles:</span>
+                <h3 id="itemListStart">Items:</h3>
                 <div id="itemList"></div>
-                <h3>List of all Old Events' Items:</h3>
+
+                <h3>Old Event Items:</h3>
                 <div id="OldEventsitemList"></div>
-                <h3>All Phrases:</h3>
+
+                <h3 id="phrasesStart">Phrases:</h3>
                 <div id="phrases"></div>
-                <h3>All Banners:</h3>
+
+                <h3 id="bannersStart">Banners:</h3>
                 <div id="banners"></div>
 
         </section>
