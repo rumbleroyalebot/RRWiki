@@ -58,18 +58,63 @@ fetch("databases/shop_items.json")
 
 // Phrases 2/4:
 
+fetch("databases/phrases.json")
+  .then((resp) => {
+    return resp.json();
+  })
+  .then((data) => {
+    var eraNames = Object.getOwnPropertyNames(data["default"]);
+    for (let i = 0; i < eraNames.length; i++) {
+
+      document.getElementById("phrases").innerHTML =
+        document.getElementById("phrases").innerHTML +
+        (eraNames[i] + ": <ul type='disc'>");
+
+      var phraseType = Object.getOwnPropertyNames(data["default"][eraNames[i]]);
+      for (let j = 0; j < phraseType.length; j++) {
+
+
+        document.getElementById("phrases").innerHTML =
+          document.getElementById("phrases").innerHTML +
+          ("<li>" + phraseType[j] + ": <ul style='list-style-type: square'>");
+
+        var phraseNumber = Object.getOwnPropertyNames(
+          data["default"][eraNames[i]][phraseType[j]]
+        );
+
+        for (let k = 0; k < phraseNumber.length; k++) {
+
+          phrase = data["default"][eraNames[i]][phraseType[j]][phraseNumber[k]];
+          document.getElementById("phrases").innerHTML =
+            document.getElementById("phrases").innerHTML +
+            "<li>" +
+            phrase +
+            "</li>";
+        }
+
+        document.getElementById("phrases").innerHTML =
+          document.getElementById("phrases").innerHTML + "</ul> </li> <br />";
+      }
+      document.getElementById("phrases").innerHTML =
+        document.getElementById("phrases").innerHTML + "</ul>";
+    }
+  });
 
 
 // Banners 3/4:
 
 fetch("databases/banners.json")
-  .then((resp) => {
-    return resp.json();
-  })
-  .then((data) => {
-    banner = Object.getOwnPropertyNames('0');
-    console.log(banner)
+.then((resp) => {
+  return resp.json();
+})
+.then((data) => {
+  dataLen = Object.getOwnPropertyNames(data);
+  for (let i in dataLen) {
+    dataNum = dataLen[i];
+    var name = data[dataNum]["name"];
+    var img = data[dataNum]["image"];
     document.getElementById("banners").innerHTML =
-    ("<p>Name:" + banner["name"] + "<br>Image:" + banner["image"] + "</p>");
-     
+      document.getElementById("banners").innerHTML +
+      ("<div class='bannerContainer'> <p>" + name + "</p><img class='banner' src='" + img + "'/></div> <hr />");
+  }
 });

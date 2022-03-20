@@ -219,6 +219,18 @@ main {
     z-index: 10;
 }
 
+.banner {
+    margin-left: 5px;
+    height:100px;
+    width:200px;
+}
+
+.bannerContainer {
+    align-self: center;
+    align-items: center;
+    display: inline-flex;
+}
+
 /* Footer Styles */
 
 .page__footer {
