@@ -68,7 +68,7 @@ fetch("databases/phrases.json")
 
       document.getElementById("phrases").innerHTML =
         document.getElementById("phrases").innerHTML +
-        (eraNames[i] + ": <ul type='disc'>");
+        ("<h3>" +eraNames[i] + ":</h3><ul type='disc'>");
 
       var phraseType = Object.getOwnPropertyNames(data["default"][eraNames[i]]);
       for (let j = 0; j < phraseType.length; j++) {
@@ -76,7 +76,7 @@ fetch("databases/phrases.json")
 
         document.getElementById("phrases").innerHTML =
           document.getElementById("phrases").innerHTML +
-          ("<li>" + phraseType[j] + ": <ul style='list-style-type: square'>");
+          ("<li><h3>" + phraseType[j] + ": <ul style='list-style-type: square'>");
 
         var phraseNumber = Object.getOwnPropertyNames(
           data["default"][eraNames[i]][phraseType[j]]
@@ -87,9 +87,9 @@ fetch("databases/phrases.json")
           phrase = data["default"][eraNames[i]][phraseType[j]][phraseNumber[k]];
           document.getElementById("phrases").innerHTML =
             document.getElementById("phrases").innerHTML +
-            "<li>" +
+            "</h3><li><p>" +
             phrase +
-            "</li>";
+            "</p></li>";
         }
 
         document.getElementById("phrases").innerHTML =
