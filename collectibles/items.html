@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rumble Royale - home</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alef&family=Kurale&family=Roboto+Mono:wght@500&family=Rosario:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/pics/Logo1.png" type="image/icon type">
+</head>
+
+<body>
+    <header class="page__header">
+        <a href="/index.html" class="menu__link" style="margin-right: 10px; padding:8px 8px 3px 8px;" title="Home"><img src="/pics/Logo1.png" alt="Rumble Royale Logo" class="logo"></img></a>
+        <a id="current" href="/collectibles.html" class="menu__link">Collectibles</a>
+        <a href="/FAQs.html" class="menu__link">FAQs</a>
+        <a href="/leaderboard.html" class="menu__link">Leaderboard</a>
+    </header>
+
+    
+    <main>
+        <button onclick="toTop()" id="top" title="Back to top"><ion-icon name="chevron-up-sharp"></ion-icon></button>
+        <section class="hero">
+          <h1 class="main__header">Rumble Royale
+              <img draggable="false" src="/pics/win.png" alt="Rumble Royale Logo" class="win"></img>
+            </h1>
+          <img draggable="false" src="/pics/layer1.svg" class="layer"></img>
+        </section>
+
+    <!-- HOME PAGE -->
+
+        <section>
+            <div class="landing__container">
+                <div class="main__header">
+                <h3 id="itemListStart">Items:</h3>
+                <div id="itemList"></div>
+
+                <h3>Old Event Items:</h3>
+                <div id="OldEventsitemList"></div>
+
+            </div>
+        </section>
+    </main>
+
+
+<!-- CONTENT END -->
+
+
+<footer class="page__footer">
+	<span>
+		
+		<a href="https://discordapp.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot" target="_blank">Add to your server!</a>
+	</span>
+</footer>
+
+<script src="/js/app.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
