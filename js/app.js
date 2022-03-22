@@ -21,7 +21,7 @@ function toTop() {
 
 // Shop Items 1/4:
 
-fetch("databases/shop_items.json")
+fetch("/databases/shop_items.json")
   .then((resp) => {
     return resp.json();
   })
@@ -39,7 +39,7 @@ fetch("databases/shop_items.json")
 
 // Old Event Shop Items 1.5/4:
 
-fetch("databases/shop_items.json")
+fetch("/databases/shop_items.json")
   .then((resp) => {
     return resp.json();
   })
@@ -58,7 +58,7 @@ fetch("databases/shop_items.json")
 
 // Phrases 2/4:
 
-fetch("databases/phrases.json")
+fetch("/databases/phrases.json")
   .then((resp) => {
     return resp.json();
   })
@@ -103,7 +103,7 @@ fetch("databases/phrases.json")
 
 // Banners 3/4:
 
-fetch("databases/banners.json")
+fetch("/databases/banners.json")
 .then((resp) => {
   return resp.json();
 })
@@ -115,6 +115,6 @@ fetch("databases/banners.json")
     var img = data[dataNum]["image"];
     document.getElementById("banners").innerHTML =
       document.getElementById("banners").innerHTML +
-      ("<div class='bannerContainer'> <p>" + name + "</p><img draggable='false' class='banner' src='" + img + "'/></div> <hr />");
+      ("<div class='bannerContainer'><p>" + name + "</p><img draggable='false' class='banner' src='" + img + "'/></div> <hr />");
   }
 });
