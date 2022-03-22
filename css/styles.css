@@ -218,37 +218,6 @@ main {
     z-index: 10;
 }
 
-.banner {
-    margin: 3px;
-    position: absolute;
-    margin-left:17vw;
-    height:65px;
-    width:180px;
-}
-
-.bannerContainer {
-    align-self: center;
-    align-items: center;
-    display: inline-flex;
-}
-
-hr {
-    border: none;
-    border-top: 3px double var(--gold);
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
-}
-
-hr:after {
-    background: var(--gold);
-    content: url(/pics/logo1-hr.png);
-    padding: 0 4px;
-    position: relative;
-    top: -13px;
-}
-
 /* Footer Styles */
 
 .page__footer {
