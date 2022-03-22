@@ -243,7 +243,7 @@ hr {
 
 hr:after {
     background: var(--gold);
-    content: url(/pics/logo1-hr.png);
+    content: url(/RRWiki/pics/logo1-hr.png);
     padding: 0 4px;
     position: relative;
     top: -13px;

@@ -20,7 +20,7 @@ function toTop() {
 // Importing JSON files:
 // Phrases 2/4:
 
-fetch("/databases/phrases.json")
+fetch("/RRWiki/databases/phrases.json")
   .then((resp) => {
     return resp.json();
   })

@@ -21,7 +21,7 @@ function toTop() {
 
 // Shop Items 1/4:
 
-fetch("/databases/shop_items.json")
+fetch("/RRWiki/databases/shop_items.json")
   .then((resp) => {
     return resp.json();
   })
@@ -39,7 +39,7 @@ fetch("/databases/shop_items.json")
 
 // Old Event Shop Items 1.5/4:
 
-fetch("/databases/shop_items.json")
+fetch("/RRWiki/databases/shop_items.json")
   .then((resp) => {
     return resp.json();
   })
