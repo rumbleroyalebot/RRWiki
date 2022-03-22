@@ -1,0 +1,264 @@
+/* --- Fonts Importing --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=Kurale&family=Roboto+Mono:wght@500&family=Rosario:wght@700&display=swap');
+
+/* --- General Rules --- */
+
+:root {
+	--orange: #ff9000; /* --- For code --- */
+	--gold: #ffbc01; /* --- For highlighting --- */
+	--silver: #BDC3C7; /* --- Normal text --- */
+    --TBlack: #1f1f1f; /* --- Top Black --- */
+    --MBlack: #121214; /* --- Middle Black --- */
+    --BBlack: #000000; /* --- Bottom Black --- */
+    --white: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 11px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border-radius: 100px;
+}
+::-webkit-scrollbar-track {
+    background: var(--MBlack);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--orange);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+    background: var(--gold);
+    color: #121213;
+}
+
+body {
+    background: var(--MBlack);
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Typeography General*/
+
+.hero {
+    position: relative;
+}
+
+h1 {
+    font-size: 60px;
+    color: var(--gold);
+    font-family: 'Rosario', sans-serif;
+    margin-left: 0.7em;
+    margin-bottom: 0px;
+}
+
+
+.h2 {
+    text-decoration: underline #ffbc01;
+    font-family: 'Rosario', sans-serif;
+    font-size: 2.5em;
+    color: var(--gold);
+}
+
+h3 {
+	text-decoration: underline var(--orange);
+    font-size: 25px;
+    font-family: 'Rosario', sans-serif;
+    color: var(--silver);
+}
+
+p {
+    line-height: 1.6em;
+    font-size: 20px;
+    color: var(--silver);
+    font-family: 'Alef', sans-serif; 
+}
+
+a {
+    text-decoration: underline;
+    transition: color 0.4s;
+}
+
+a:hover {
+    color: var(--orange)
+}
+
+ul {
+    font-size: 25px;
+    color: var(--silver);
+    font-family: 'Alef', sans-serif;
+    margin-bottom: 1em;
+}
+
+.gold {
+    color: var(--gold);
+}
+
+.orange {
+	color: var(--orange);
+}
+
+.code {
+	color: var(--orange);
+}
+
+.silver {
+	color: var(--silver);
+}
+
+#top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 10;
+    border: none;
+    outline: none;
+    background-color: var(--gold);
+    color: var(--BBlack);
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    transition: color 0.4s;
+  }
+
+#top:hover {
+    background: var(--BBlack);
+    color: var(--gold)
+}
+
+.main__header {
+	align-self: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.win {
+	align-self: center;
+    display: inline-block;
+	width: 100px;
+    height: 100px;
+}
+
+.layer {
+    aspect-ratio: 960/300;
+    opacity: 0.8;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ---- Layout Rules ---- */
+main {
+    margin: 12vh 0em 3vh;
+}
+
+.landing__container {
+    padding: 1em;
+    text-align: left;
+}
+
+@media only screen and (min-width: 700px){
+    .landing__container {
+        padding: 35px;
+    }
+}
+
+/* ---- Icons Rules ---- */
+.socials {
+  font-size: 20px;
+  color: var(--gold);
+  transition: color 0.4s;
+  text-decoration: none;
+}
+
+.socials:hover {
+	color: var(--white);
+}
+
+/* Header Styles */
+.page__header {
+    position:absolute;
+    display: inline-flex;
+    background-color: var(--TBlack);
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.menu__link {
+    align-self: center;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--silver);
+    transition: ease 0.4s all;
+}
+
+.page__header .menu__link:hover {
+    background: var(--BBlack);
+    color: var(--orange);
+}
+
+#current {
+    background: var(--BBlack);
+    color: var(--gold);
+}
+
+.logo {
+    border-radius: 10px;
+    width: 32px;
+    height: 32px;
+    z-index: 10;
+}
+
+.banner {
+    margin: 3px;
+    position: absolute;
+    margin-left:17vw;
+    height:65px;
+    width:180px;
+}
+
+.bannerContainer {
+    align-self: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+hr {
+    border: none;
+    border-top: 3px double var(--gold);
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: var(--gold);
+    content: url(/pics/logo1-hr.png);
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+/* Footer Styles */
+
+.page__footer {
+    background: var(--BBlack);
+    padding: 10px 0px 10px 10px;
+}
+
+span a {
+	text-decoration: none;
+    color: #ccc;
+    font-size: 18px;
+    font-family: 'Kurale', serif;
+}
