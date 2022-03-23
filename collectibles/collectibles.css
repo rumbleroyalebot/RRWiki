@@ -153,6 +153,24 @@ ul {
     padding: 0px;
 }
 
+.eraLogo {
+    width: 45px;
+    height: 45px;
+    margin-right: 7px;
+}
+
+.eraContainer {
+    align-self: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.eraName {
+    margin-block-start: 15px;
+    margin-block-end: 15px;
+    line-height: normal;
+    font-size: 25px;
+}
 /* ---- Layout Rules ---- */
 main {
     margin: 12vh 0em 3vh;
@@ -239,14 +257,6 @@ hr {
     overflow: visible;
     text-align: center;
     height: 5px;
-}
-
-hr:after {
-    background: var(--gold);
-    content: url(/RRWiki/pics/logo1-hr.png);
-    padding: 0 4px;
-    position: relative;
-    top: -13px;
 }
 
 /* Footer Styles */

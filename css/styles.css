@@ -79,6 +79,7 @@ p {
 }
 
 a {
+    font-weight: bold;
     text-decoration: underline;
     transition: color 0.4s;
 }
@@ -229,5 +230,6 @@ span a {
 	text-decoration: none;
     color: #ccc;
     font-size: 18px;
+    font-weight: normal;
     font-family: 'Kurale', serif;
 }

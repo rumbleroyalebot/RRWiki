@@ -21,21 +21,151 @@ function toTop() {
 
 // Shop Items 1/4:
 
-fetch("/RRWiki/databases/shop_items.json")
+// Classic Era 1/:
+fetch("./shop_items.json")
   .then((resp) => {
     return resp.json();
   })
   .then((data) => {
-    const skins = data["skins"];
+    var skins = data["skins"];
+    var skindiv = document.getElementById("skins");
+    for (let i in skins) {
+      if (skins[i]["era"] === "classic") {
+        skindiv.innerHTML =
+          skindiv.innerHTML +
+          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+          ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
+      }
+    }
+  });
 
-  for (var i = 0; i < skins.length; i++) {
-  document.getElementById("itemList").innerHTML =
-    document.getElementById("itemList").innerHTML +
-    ("<p> Name: <span class = 'gold'>" + skins[i].skin + " " + skins[i].item + "</span> <br>") +
-    ("Era: <b>" + skins[i].era + "</b><br>") +
-    ("Price: " + skins[i].price + " " + skins[i].cost + "</p>");
-  }
-});
+// Classic Era:
+fetch("./shop_items.json")
+  .then((resp) => {
+    return resp.json();
+  })
+  .then((data) => {
+    var skins = data["skins"];
+    var skindiv = document.getElementById("skins");
+    for (let i in skins) {
+      if (skins[i]["era"] === "classic") {
+        skindiv.innerHTML =
+          skindiv.innerHTML +
+          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+          ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
+      }
+    }
+  });
+
+// Classic Era:
+fetch("./shop_items.json")
+  .then((resp) => {
+    return resp.json();
+  })
+  .then((data) => {
+    var skins = data["skins"];
+    var skindiv = document.getElementById("skins");
+    for (let i in skins) {
+      if (skins[i]["era"] === "classic") {
+        skindiv.innerHTML =
+          skindiv.innerHTML +
+          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+          ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
+      }
+    }
+  });
+
+// Classic Era:
+fetch("./shop_items.json")
+  .then((resp) => {
+    return resp.json();
+  })
+  .then((data) => {
+    var skins = data["skins"];
+    var skindiv = document.getElementById("skins");
+    for (let i in skins) {
+      if (skins[i]["era"] === "classic") {
+        skindiv.innerHTML =
+          skindiv.innerHTML +
+          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+          ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
+      }
+    }
+  });
+
+// Classic Era:
+fetch("./shop_items.json")
+  .then((resp) => {
+    return resp.json();
+  })
+  .then((data) => {
+    var skins = data["skins"];
+    var skindiv = document.getElementById("skins");
+    for (let i in skins) {
+      if (skins[i]["era"] === "classic") {
+        skindiv.innerHTML =
+          skindiv.innerHTML +
+          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+          ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
+      }
+    }
+  });
+
+// Classic Era:
+fetch("./shop_items.json")
+  .then((resp) => {
+    return resp.json();
+  })
+  .then((data) => {
+    var skins = data["skins"];
+    var skindiv = document.getElementById("skins");
+    for (let i in skins) {
+      if (skins[i]["era"] === "classic") {
+        skindiv.innerHTML =
+          skindiv.innerHTML +
+          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+          ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
+      }
+    }
+  });
+
+// Classic Era:
+fetch("./shop_items.json")
+  .then((resp) => {
+    return resp.json();
+  })
+  .then((data) => {
+    var skins = data["skins"];
+    var skindiv = document.getElementById("skins");
+    for (let i in skins) {
+      if (skins[i]["era"] === "classic") {
+        skindiv.innerHTML =
+          skindiv.innerHTML +
+          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+          ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
+      }
+    }
+  });
+
+// Classic Era:
+fetch("./shop_items.json")
+  .then((resp) => {
+    return resp.json();
+  })
+  .then((data) => {
+    var skins = data["skins"];
+    var skindiv = document.getElementById("skins");
+    for (let i in skins) {
+      if (skins[i]["era"] === "classic") {
+        skindiv.innerHTML =
+          skindiv.innerHTML +
+          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+          ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
+      }
+    }
+  });
+
+
 
 // Old Event Shop Items 1.5/4:
 
