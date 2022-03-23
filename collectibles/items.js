@@ -21,7 +21,7 @@ function toTop() {
 
 // Shop Items 1/4:
 
-// Classic Era 1/:
+// Classic Era 1/6:
 fetch("./shop_items.json")
   .then((resp) => {
     return resp.json();

@@ -193,6 +193,7 @@ main {
 }
 
 .menu__link {
+    font-weight: normal;
     align-self: center;
     display: inline-block;
     font-size: 20px;
