@@ -33,7 +33,7 @@ fetch("/RRWiki/databases/shop_items.json")
       if (skins[i]["era"] === "classic") {
         skindiv.innerHTML =
           skindiv.innerHTML +
-          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+          ("<p>Name:<span class = 'gold'> " + skins[i]["skin"] + " " + skins[i]["item"] + "</span><br />") +
           ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
       }
     }
@@ -51,7 +51,7 @@ fetch("/RRWiki/databases/shop_items.json")
       if (skins[i]["era"] === "modern") {
         skindiv.innerHTML =
           skindiv.innerHTML +
-          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+          ("<p>Name:<span class = 'gold'> " + skins[i]["skin"] + " " + skins[i]["item"] + "</span><br />") +
           ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
       }
     }
@@ -69,7 +69,7 @@ fetch("/RRWiki/databases/shop_items.json")
     if (skins[i]["era"] === "futuristic") {
       skindiv.innerHTML =
         skindiv.innerHTML +
-        ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+        ("<p>Name:<span class = 'gold'> " + skins[i]["skin"] + " " + skins[i]["item"] + "</span><br />") +
         ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
     }
   }
@@ -87,7 +87,7 @@ fetch("/RRWiki/databases/shop_items.json")
       if (skins[i]["era"] === "medieval") {
         skindiv.innerHTML =
           skindiv.innerHTML +
-          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+          ("<p>Name:<span class = 'gold'> " + skins[i]["skin"] + " " + skins[i]["item"] + "</span><br />") +
           ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
       }
     }
@@ -105,7 +105,7 @@ fetch("/RRWiki/databases/shop_items.json")
     if (skins[i]["era"] === "pirate") {
       skindiv.innerHTML =
         skindiv.innerHTML +
-        ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+        ("<p>Name:<span class = 'gold'> " + skins[i]["skin"] + " " + skins[i]["item"] + "</span><br />") +
         ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
     }
   }
@@ -123,7 +123,7 @@ fetch("/RRWiki/databases/shop_items.json")
       if (skins[i]["era"] === "samurai") {
         skindiv.innerHTML =
           skindiv.innerHTML +
-          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+          ("<p>Name:<span class = 'gold'> " + skins[i]["skin"] + " " + skins[i]["item"] + "</span><br />") +
           ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
       }
     }
@@ -142,7 +142,7 @@ fetch("/RRWiki/databases/shop_items.json")
     if (skins[i]["era"] === "steampunk") {
       skindiv.innerHTML =
         skindiv.innerHTML +
-        ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+        ("<p>Name:<span class = 'gold'> " + skins[i]["skin"] + " " + skins[i]["item"] + "</span><br />") +
         ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
     }
   }
