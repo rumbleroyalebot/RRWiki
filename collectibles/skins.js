@@ -21,14 +21,14 @@ function toTop() {
 
 // Shop Items 1/4:
 
-// Classic Era 1/6:
-fetch("./shop_items.json")
+// Classic Era 1/7:
+fetch("/RRWiki/databases/shop_items.json")
   .then((resp) => {
     return resp.json();
   })
   .then((data) => {
     var skins = data["skins"];
-    var skindiv = document.getElementById("skins");
+    var skindiv = document.getElementById("classicSkins");
     for (let i in skins) {
       if (skins[i]["era"] === "classic") {
         skindiv.innerHTML =
@@ -39,16 +39,16 @@ fetch("./shop_items.json")
     }
   });
 
-// Classic Era:
-fetch("./shop_items.json")
+// Modern Era 2/7:
+fetch("/RRWiki/databases/shop_items.json")
   .then((resp) => {
     return resp.json();
   })
   .then((data) => {
     var skins = data["skins"];
-    var skindiv = document.getElementById("skins");
+    var skindiv = document.getElementById("modernSkins");
     for (let i in skins) {
-      if (skins[i]["era"] === "classic") {
+      if (skins[i]["era"] === "modern") {
         skindiv.innerHTML =
           skindiv.innerHTML +
           ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
@@ -57,16 +57,34 @@ fetch("./shop_items.json")
     }
   });
 
-// Classic Era:
-fetch("./shop_items.json")
+// Futuristic Era 3/7:
+fetch("/RRWiki/databases/shop_items.json")
+.then((resp) => {
+  return resp.json();
+})
+.then((data) => {
+  var skins = data["skins"];
+  var skindiv = document.getElementById("futuristicSkins");
+  for (let i in skins) {
+    if (skins[i]["era"] === "futuristic") {
+      skindiv.innerHTML =
+        skindiv.innerHTML +
+        ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+        ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
+    }
+  }
+});
+
+// Medieval Era 4/7:
+fetch("/RRWiki/databases/shop_items.json")
   .then((resp) => {
     return resp.json();
   })
   .then((data) => {
     var skins = data["skins"];
-    var skindiv = document.getElementById("skins");
+    var skindiv = document.getElementById("medievalSkins");
     for (let i in skins) {
-      if (skins[i]["era"] === "classic") {
+      if (skins[i]["era"] === "medieval") {
         skindiv.innerHTML =
           skindiv.innerHTML +
           ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
@@ -75,88 +93,34 @@ fetch("./shop_items.json")
     }
   });
 
-// Classic Era:
-fetch("./shop_items.json")
-  .then((resp) => {
-    return resp.json();
-  })
-  .then((data) => {
-    var skins = data["skins"];
-    var skindiv = document.getElementById("skins");
-    for (let i in skins) {
-      if (skins[i]["era"] === "classic") {
-        skindiv.innerHTML =
-          skindiv.innerHTML +
-          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
-          ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
-      }
+// Pirate Era 5/7:
+fetch("/RRWiki/databases/shop_items.json")
+.then((resp) => {
+  return resp.json();
+})
+.then((data) => {
+  var skins = data["skins"];
+  var skindiv = document.getElementById("pirateSkins");
+  for (let i in skins) {
+    if (skins[i]["era"] === "pirate") {
+      skindiv.innerHTML =
+        skindiv.innerHTML +
+        ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+        ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
     }
-  });
+  }
+});
 
-// Classic Era:
-fetch("./shop_items.json")
+// Samurai Era 6/7:
+fetch("/RRWiki/databases/shop_items.json")
   .then((resp) => {
     return resp.json();
   })
   .then((data) => {
     var skins = data["skins"];
-    var skindiv = document.getElementById("skins");
+    var skindiv = document.getElementById("samuraiSkins");
     for (let i in skins) {
-      if (skins[i]["era"] === "classic") {
-        skindiv.innerHTML =
-          skindiv.innerHTML +
-          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
-          ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
-      }
-    }
-  });
-
-// Classic Era:
-fetch("./shop_items.json")
-  .then((resp) => {
-    return resp.json();
-  })
-  .then((data) => {
-    var skins = data["skins"];
-    var skindiv = document.getElementById("skins");
-    for (let i in skins) {
-      if (skins[i]["era"] === "classic") {
-        skindiv.innerHTML =
-          skindiv.innerHTML +
-          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
-          ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
-      }
-    }
-  });
-
-// Classic Era:
-fetch("./shop_items.json")
-  .then((resp) => {
-    return resp.json();
-  })
-  .then((data) => {
-    var skins = data["skins"];
-    var skindiv = document.getElementById("skins");
-    for (let i in skins) {
-      if (skins[i]["era"] === "classic") {
-        skindiv.innerHTML =
-          skindiv.innerHTML +
-          ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
-          ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
-      }
-    }
-  });
-
-// Classic Era:
-fetch("./shop_items.json")
-  .then((resp) => {
-    return resp.json();
-  })
-  .then((data) => {
-    var skins = data["skins"];
-    var skindiv = document.getElementById("skins");
-    for (let i in skins) {
-      if (skins[i]["era"] === "classic") {
+      if (skins[i]["era"] === "samurai") {
         skindiv.innerHTML =
           skindiv.innerHTML +
           ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
@@ -166,6 +130,23 @@ fetch("./shop_items.json")
   });
 
 
+// Steampunk Era 7/7:
+fetch("/RRWiki/databases/shop_items.json")
+.then((resp) => {
+  return resp.json();
+})
+.then((data) => {
+  var skins = data["skins"];
+  var skindiv = document.getElementById("steampunkSkins");
+  for (let i in skins) {
+    if (skins[i]["era"] === "steampunk") {
+      skindiv.innerHTML =
+        skindiv.innerHTML +
+        ("<p>Name: " + skins[i]["skin"] + " " + skins[i]["item"] + "<br />") +
+        ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
+    }
+  }
+});
 
 // Old Event Shop Items 1.5/4:
 
