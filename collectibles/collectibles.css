@@ -210,6 +210,7 @@ main {
 }
 
 .menu__link {
+    font-family: 'Kurale', serif;
     align-self: center;
     display: inline-block;
     font-size: 20px;
