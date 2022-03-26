@@ -239,16 +239,24 @@ main {
 
 .banner {
     margin: 3px;
-    position: absolute;
-    margin-left:17vw;
+    position: relative;
+    margin-left:7vw;
     height:65px;
     width:180px;
 }
-
+@media only screen and (min-width: 700px){
+    .banner {
+        height: 50px;
+        width: 120px;
+    }
+}
 .bannerContainer {
     align-self: center;
     align-items: center;
     display: inline-flex;
+}
+.bannerName {
+    min-width: 170px;
 }
 
 hr {

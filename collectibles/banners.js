@@ -33,6 +33,6 @@ fetch("/RRWiki/databases/banners.json")
     var img = data[dataNum]["image"];
     document.getElementById("banners").innerHTML =
       document.getElementById("banners").innerHTML +
-      ("<div class='bannerContainer'><p>" + name + "</p><img draggable='false' class='banner' src='" + img + "'/></div> <hr />");
+      ("<div class='bannerContainer'><p class= 'bannerName'>" + name + "</p><img draggable='false' class='banner' src='" + img + "'/></div> <hr />");
   }
 });
