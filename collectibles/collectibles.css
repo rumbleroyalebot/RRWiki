@@ -249,12 +249,24 @@ main {
     width:180px;
 }
 
+#banners img {
+    margin: 3px;
+    position: relative;
+    margin-left:7vw;
+    height:65px;
+    width:180px;
+}
+
 .bigimage {
     height: 130px;
     width: 360px
 }
 @media only screen and (min-width: 700px){
     .banner {
+        height: 50px;
+        width: 120px;
+    }
+    #banners img {
         height: 50px;
         width: 120px;
     }
