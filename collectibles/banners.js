@@ -39,7 +39,7 @@ fetch('/RRWiki/databases/banners2.json')
             var divID = Name.toLowerCase().replace(' ', '_').replace('.', '_');
             var imageDiv = document
                 .getElementById('banners')
-                .appendChild(document.createElement('div'));
+                .appendChild(document.createElement('p'));
             imageDiv.id = divID;
             divArray.push(divID);
 
