@@ -21,7 +21,7 @@ function toTop() {
 
 // Banners 3/4:
 
-fetch('./banners2.json')
+fetch('/RRWiki/databases/banners2.json')
     .then((resp) => {
         return resp.json();
     })
