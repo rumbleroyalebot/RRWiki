@@ -257,7 +257,7 @@ main {
     width:180px;
 }
 
-.bigimage {
+#banners .bigimage {
     height: 130px;
     width: 360px
 }
@@ -270,7 +270,7 @@ main {
         height: 50px;
         width: 120px;
     }
-    .bigimage {
+    #banners .bigimage {
         height: 110px;
         width: 300px
     }
