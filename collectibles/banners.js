@@ -21,18 +21,40 @@ function toTop() {
 
 // Banners 3/4:
 
-fetch("/RRWiki/databases/banners.json")
-.then((resp) => {
-  return resp.json();
-})
-.then((data) => {
-  dataLen = Object.getOwnPropertyNames(data);
-  for (let i in dataLen) {
-    dataNum = dataLen[i];
-    var name = data[dataNum]["name"];
-    var img = data[dataNum]["image"];
-    document.getElementById("banners").innerHTML =
-      document.getElementById("banners").innerHTML +
-      ("<div class='bannerContainer'><p class= 'bannerName'>" + name + "</p><img draggable='false' class='banner' src='" + img + "'/></div> <hr />");
-  }
-});
+fetch('/RRWiki/databases/banners2.json')
+    .then((resp) => {
+        return resp.json();
+    })
+    .then((data) => {
+        // console.log(data);
+        var divArray = new Array();
+        var imageNames = Object.getOwnPropertyNames(data);
+        console.log(imageNames);
+        for (let i in imageNames) {
+            // get image name and link
+            var Name = imageNames[i];
+            var Link = data[imageNames[i]];
+
+            // make elements
+            var divID = Name.toLowerCase().replace(' ', '_').replace('.', '_');
+            var imageDiv = document
+                .getElementById('banners')
+                .appendChild(document.createElement('div'));
+            imageDiv.id = divID;
+            divArray.push(divID);
+
+            imageDiv.appendChild(document.createTextNode(Name));
+
+            var Image = imageDiv.appendChild(document.createElement('img'));
+            Image.setAttribute('src', Link);
+
+            imageDiv.appendChild(document.createElement('hr'));
+
+            // event listener
+            imageDiv.addEventListener('click', () => {
+                document
+                    .getElementById(divArray[i])
+                    .children[0].classList.toggle('bigimage');
+            });
+        }
+    });
