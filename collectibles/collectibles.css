@@ -40,10 +40,6 @@ body {
     background: var(--MBlack);
     margin: 0px;
     padding: 0px;
-    line-height: 1.6em;
-    font-size: 20px;
-    color: var(--silver);
-    font-family: 'Alef', sans-serif; 
 }
 
 /* Typeography General*/
