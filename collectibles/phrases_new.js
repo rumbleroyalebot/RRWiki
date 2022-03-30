@@ -21,7 +21,7 @@ function toTop() {
 // Phrases 2.5/4:
 
 
-fetch('/RRWiki/databases/phrases_new.json')
+fetch('/RRWiki/databases/phrases.json')
    .then((resp) => {
       return resp.json();
    })
