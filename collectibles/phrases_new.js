@@ -28,7 +28,7 @@ fetch('/RRWiki/databases/phrases.json')
    .then((data) => {
       for (let a in data) {
          var mainCategs = document
-            .getElementById('phrasesmain')
+            .getElementById('phrases')
             .appendChild(document.createElement('p'));
          mainCategs.id = a;
          mainCategs
