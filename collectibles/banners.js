@@ -39,14 +39,16 @@ fetch('/RRWiki/databases/banners2.json')
             var divID = Name.toLowerCase().replace(' ', '_').replace('.', '_');
             var imageDiv = document
                 .getElementById('banners')
-                .appendChild(document.createElement('div'));
+                .appendChild(document.createElement('p'));
             imageDiv.id = divID;
+            imageDiv.classList.add('bannerName', 'bannersContainer');
             divArray.push(divID);
 
             imageDiv.appendChild(document.createTextNode(Name));
 
             var Image = imageDiv.appendChild(document.createElement('img'));
             Image.setAttribute('src', Link);
+            Image.setAttribute('loading', 'lazy');
 
             imageDiv.appendChild(document.createElement('hr'));
 

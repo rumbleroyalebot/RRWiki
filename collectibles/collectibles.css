@@ -245,7 +245,15 @@ main {
     width:180px;
 }
 
-.bigimage {
+#banners img {
+    margin: 3px;
+    position: relative;
+    margin-left:7vw;
+    height:65px;
+    width:180px;
+}
+
+#banners .bigimage {
     height: 130px;
     width: 360px
 }
@@ -254,7 +262,11 @@ main {
         height: 50px;
         width: 120px;
     }
-    .bigimage {
+    #banners img {
+        height: 50px;
+        width: 120px;
+    }
+    #banners .bigimage {
         height: 110px;
         width: 300px
     }
@@ -277,6 +289,9 @@ hr {
     height: 5px;
 }
 
+.dropdown_content {
+	display:none;
+}
 /* Footer Styles */
 
 .page__footer {
