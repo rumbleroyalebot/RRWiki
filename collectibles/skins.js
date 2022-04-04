@@ -22,7 +22,7 @@ function toTop() {
 // Shop Items 1/4:
 
 // Classic Era 1/7:
-fetch("/RRWiki/databases/shop_items.json")
+fetch("../databases/shop_items.json")
   .then((resp) => {
     return resp.json();
   })
@@ -40,7 +40,7 @@ fetch("/RRWiki/databases/shop_items.json")
   });
 
 // Modern Era 2/7:
-fetch("/RRWiki/databases/shop_items.json")
+fetch("../databases/shop_items.json")
   .then((resp) => {
     return resp.json();
   })
@@ -58,7 +58,7 @@ fetch("/RRWiki/databases/shop_items.json")
   });
 
 // Futuristic Era 3/7:
-fetch("/RRWiki/databases/shop_items.json")
+fetch("../databases/shop_items.json")
 .then((resp) => {
   return resp.json();
 })
@@ -76,7 +76,7 @@ fetch("/RRWiki/databases/shop_items.json")
 });
 
 // Medieval Era 4/7:
-fetch("/RRWiki/databases/shop_items.json")
+fetch("../databases/shop_items.json")
   .then((resp) => {
     return resp.json();
   })
@@ -94,7 +94,7 @@ fetch("/RRWiki/databases/shop_items.json")
   });
 
 // Pirate Era 5/7:
-fetch("/RRWiki/databases/shop_items.json")
+fetch("../databases/shop_items.json")
 .then((resp) => {
   return resp.json();
 })
@@ -112,7 +112,7 @@ fetch("/RRWiki/databases/shop_items.json")
 });
 
 // Samurai Era 6/7:
-fetch("/RRWiki/databases/shop_items.json")
+fetch("../databases/shop_items.json")
   .then((resp) => {
     return resp.json();
   })
@@ -131,7 +131,7 @@ fetch("/RRWiki/databases/shop_items.json")
 
 
 // Steampunk Era 7/7:
-fetch("/RRWiki/databases/shop_items.json")
+fetch("../databases/shop_items.json")
 .then((resp) => {
   return resp.json();
 })
@@ -150,7 +150,7 @@ fetch("/RRWiki/databases/shop_items.json")
 
 // Old Event Shop Items 1.5/4:
 
-fetch("/RRWiki/databases/shop_items.json")
+fetch("../databases/shop_items.json")
   .then((resp) => {
     return resp.json();
   })
