@@ -171,16 +171,32 @@ main {
     }
 }
 
-/* ---- Icons Rules ---- */
-.socials {
-  font-size: 20px;
-  color: var(--gold);
-  transition: color 0.4s;
-  text-decoration: none;
+.slide1 {
+    align-items: center;
+    display: inline-flex;
+    margin-top: 130px;
 }
 
-.socials:hover {
-	color: var(--white);
+.slide2 {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    margin-top: 130px;
+}
+
+.slideText {
+    margin: 5px;
+}
+
+.slideTitle {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.slideImage {
+    width: 450px;
+    height: 450px;
+    margin: 10px;
 }
 
 /* Header Styles */
@@ -258,14 +274,14 @@ header a {
 }
 
 .footerText {
-    font-size: 15px;
+    font-size: 20px;
     color: var(--silver);
     font-family: 'Alef', sans-serif;
     margin-top: 15px;
 }
 
 .footerTitle {
-    font-size: 20px;
+    font-size: 25px;
     color: var(--silver);
     font-family: 'Rosario', sans-serif;
 }
@@ -299,3 +315,15 @@ header a {
     width: 50px;
     height: 50px;
 }
+
+.footerContainer a {
+    font-weight: normal;
+    color: var(--gold);
+    transition: color 0.4s;
+    text-decoration: none;
+}
+  
+.footerContainer a:hover {
+    color: var(--white);
+  }
+  

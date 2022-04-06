@@ -299,9 +299,50 @@ hr {
     padding: 10px 0px 10px 10px;
 }
 
-span a {
-	text-decoration: none;
-    color: #ccc;
-    font-size: 18px;
-    font-family: 'Kurale', serif;
+.footerMain {
+    flex-direction: column;
+    display: flex;
+}
+
+.footerText {
+    font-size: 15px;
+    color: var(--silver);
+    font-family: 'Alef', sans-serif;
+    margin-top: 15px;
+}
+
+.footerTitle {
+    font-size: 20px;
+    color: var(--silver);
+    font-family: 'Rosario', sans-serif;
+}
+
+.footerH1 {
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 35px;
+    color: var(--silver);
+    font-family: 'Rosario', sans-serif;
+}
+
+.footerContainer {
+    padding: 3vw;
+    display: flex;
+}
+
+.footerHeader {
+    padding: 3vw;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footerElement {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+}
+
+.footerLogo {
+    width: 50px;
+    height: 50px;
 }

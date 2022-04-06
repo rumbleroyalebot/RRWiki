@@ -17,7 +17,7 @@
 <body>
     <header class="page__header">
     <div class="navbarContainer">
-        <a id="current" href="index.html" class="menu__link" title="Home"><img src="pics/Logo1.png" alt="RR Logo" class="logo"></img></a>
+        <a id="current" href="index.html" class="menu__link" title="Home"><img src="pics/Logo1.png" alt="RR Logo" class="logo" /></a>
         <a href="collectibles.html" class="menu__link">Collectibles</a>
         <a href="FAQs.html" class="menu__link">FAQs</a>
         <a href="leaderboard.html" class="menu__link">Leaderboard</a>
@@ -32,30 +32,39 @@
         <button onclick="toTop()" id="top" title="Back to top"><ion-icon name="chevron-up-sharp"></ion-icon></button>
         <section class="hero">
             <h1 class="main__header">Rumble Royale
-              <img draggable="false" src="pics/win.png" alt="RR Logo" class="win"></img>
+              <img draggable="false" src="pics/win.png" alt="RR Logo" class="win" />
             </h1>
-            <img draggable="false" src="pics/layer1.svg" class="layer"></img>
+            <img draggable="false" src="pics/layer1.svg" class="layer" />
         </section>
 
     <!-- HOME PAGE -->
 
         <section>
             <div class="landing__container">
-
-                <h1>Features, why should we invite the bot, images and slides</h1>
-                <span class="h2">About the bot:</span>
-                <p><span class= "gold">Rumble Royale</span> is a text-based <span class= "gold">Battle Royale</span> Discord bot; every player will be put into a game where they fight against each other until there is only <span class= "gold">one winner</span>. The last man standing will be awarded gold for his victory.</p>
-				<p>With the gold, players can purchase backpacks using the <span class= "code">?shop</span> command. The backpacks can then be opened using the <span class= "code">?open</span> command.</p>
-
-                <h3>Getting started:</h3>
-                <p>Invited the bot to your server, but not sure what to do next? You can use <span class= "code">?help</span> command for a list of all commands and some other info about the bot. You can also <a class="gold" href="FAQs.html">read the FAQs section</a> on our website or browse the information in the channels of the Rumble Royale server.</p>
                 
-                <h3>Connect with us:</h3>
-                <p><a href="https://discord.gg/XfbmXU2WY8" class="socials" target="_blank"><ion-icon name="logo-discord"></ion-icon> Join our server!</a><br>
-                <a href="https://twitter.com/RumbleRoyaleGG" class="socials" target="_blank"><ion-icon name="logo-twitter"></ion-icon> Follow us on Twitter!</a><br>
-                <a href="https://top.gg/bot/693167035068317736/vote" class="socials" target="_blank"><ion-icon name="arrow-up-circle-sharp"></ion-icon> Vote for us on top.gg!</a></p>
-                <p>Bot by <span class= "gold">Niels van Vliet</span>, Niels#7119 on Discord.</p>
-                <p>Happy Rumbling and may the odds always be in your favor!</p>
+                <span class="h2">About the bot:</span>
+
+                <div class="slide1">
+                    <img src="pics/background.png" class="slideImage" />
+                    <span class="slideText">
+                        <p class="slideTitle">Automation:</p>
+                        <p><span class= "gold">Rumble Royale</span> is a text-based <span class= "gold">Battle Royale</span> Discord bot; every player will be put into a game where they fight against each other until there is only <span class= "gold">one winner</span>. The last man standing will be awarded gold for his victory.</p>
+				        <p>With the gold, players can purchase backpacks using the <span class= "code">?shop</span> command. The backpacks can then be opened using the <span class= "code">?open</span> command.</p>
+                    </span>
+                </div>
+
+                <div class="slide2">
+                    <img src="pics/background.png" class="slideImage" />
+                    <span class="slideText">
+                        <p class="slideTitle">Getting started:</p>
+                        <p>Invited the bot to your server, but not sure what to do next? You can use <span class= "code">?help</span> command for a list of all commands and some other info about the bot. You can also <a class="gold" href="FAQs.html">read the FAQs section</a> on our website or browse the information in the channels of the Rumble Royale server.</p>
+                    </span>
+                </div>
+
+                <div class="slide1">
+                    <p>Ready to ...? Invite to your server now!</p>
+                </div>
+                
             </div>
         </section>
     </main>
@@ -78,18 +87,19 @@
             </div>
 
             <div class="footerElement">
-                <span class="footerTitle">Collectibles</span>
-                <span class="footerText">Link</span>
-                <span class="footerText">Link</span>
-                <span class="footerText">Link</span>
+                <span class="footerTitle">Connect!</span>
+                <span class="footerText"><a href="https://discord.gg/XfbmXU2WY8" target="_blank"><ion-icon name="logo-discord"></ion-icon> Join our server!</a></span>
+                <span class="footerText"><a href="https://twitter.com/RumbleRoyaleGG" target="_blank"><ion-icon name="logo-twitter"></ion-icon> Follow us on Twitter!</a></span>
+                <span class="footerText"><a href="https://top.gg/bot/693167035068317736/vote" target="_blank"><ion-icon name="arrow-up-circle-sharp"></ion-icon> Vote for us on top.gg!</a></span>
             </div>
 
             <div class="footerElement">
                 <span class="footerTitle">Information</span>
                 <span class="footerText">Link</span>
-                <span class="footerText">Link</span>
-                <span class="footerText">Link</span>
+                <span class="footerText"><a href="Disclaimer.html">Disclaimer</a></span>
+                <span class="footerText">Bot by <span class= "gold">Niels van Vliet</span>, Niels#7119 on Discord.</span>
             </div>
+
         </div>
     </div>
 </footer>
