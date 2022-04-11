@@ -18,46 +18,64 @@ function toTop() {
 
 
 // Importing JSON files:
-// Phrases 2/4:
+// Phrases 2.5/4:
+
 
 fetch("../databases/phrases.json")
-  .then((resp) => {
-    return resp.json();
-  })
-  .then((data) => {
-    var eraNames = Object.getOwnPropertyNames(data["default"]);
-    for (let i = 0; i < eraNames.length; i++) {
+   .then((resp) => {
+      return resp.json();
+   })
+   .then((data) => {
+      for (let a in data) {
+         var mainCategs = document
+            .getElementById('phrases')
+            .appendChild(document.createElement('p'));
+         mainCategs.id = a;
+         mainCategs
+            .appendChild(document.createElement('h1'))
+            .appendChild(
+               document.createTextNode(a.charAt(0).toUpperCase() + a.slice(1))
+            );
 
-      document.getElementById("phrases").innerHTML =
-        document.getElementById("phrases").innerHTML +
-        ("<h3>" +eraNames[i] + ":</h3><ul type='disc'>");
+         for (let i in data[a]) {
+            var eraDiv = document
+               .getElementById(a)
+               .appendChild(document.createElement('div'));
+            eraDiv
+               .appendChild(document.createElement('h2'))
+               .appendChild(
+                  document.createTextNode(
+                     i.charAt(0).toUpperCase() + i.slice(1)
+                  )
+               );
 
-      var phraseType = Object.getOwnPropertyNames(data["default"][eraNames[i]]);
-      for (let j = 0; j < phraseType.length; j++) {
+            for (let j in data[a][i]) {
+               var phraseUL = eraDiv.appendChild(document.createElement('ul'));
+               var phraseType = phraseUL.appendChild(
+                  document.createElement('h3')
+               );
+               phraseType.appendChild(
+                  document.createTextNode(
+                     (j.charAt(0).toUpperCase() + j.slice(1)).replace('_', ' ')
+                  )
+               );
+               phraseUL.id = `${j}_${i}_${a}`;
+               phraseUL.classList.add('dropdown_content');
 
-
-        document.getElementById("phrases").innerHTML =
-          document.getElementById("phrases").innerHTML +
-          ("<li><h3>" + phraseType[j] + ": <ul style='list-style-type: square'>");
-
-        var phraseNumber = Object.getOwnPropertyNames(
-          data["default"][eraNames[i]][phraseType[j]]
-        );
-
-        for (let k = 0; k < phraseNumber.length; k++) {
-
-          phrase = data["default"][eraNames[i]][phraseType[j]][phraseNumber[k]];
-          document.getElementById("phrases").innerHTML =
-            document.getElementById("phrases").innerHTML +
-            "</h3><li><p>" +
-            phrase +
-            "</p></li>";
-        }
-
-        document.getElementById("phrases").innerHTML =
-          document.getElementById("phrases").innerHTML + "</ul> </li> <br />";
+               for (let k in data[a][i][j]) {
+                  var phraseLI = phraseUL.appendChild(
+                     document.createElement('li')
+                  );
+                  phraseLI.appendChild(
+                     document.createTextNode(data[a][i][j][k])
+                  );
+                  eraDiv.addEventListener('click', () => {
+                     document
+                        .getElementById(`${j}_${i}_${a}`)
+                        .classList.toggle('dropdown_content');
+                  });
+               }
+            }
+         }
       }
-      document.getElementById("phrases").innerHTML =
-        document.getElementById("phrases").innerHTML + "</ul>";
-    }
-  });
+   });
