@@ -21,7 +21,7 @@ function toTop() {
 
 // Banners 3/4:
 
-fetch('../databases/banners2.json')
+fetch('../databases/banners.json')
     .then((resp) => {
         return resp.json();
     })
