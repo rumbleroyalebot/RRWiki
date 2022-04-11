@@ -38,17 +38,21 @@ fetch('../databases/banners2.json')
             // make elements
             var divID = Name.toLowerCase().replace(' ', '_').replace('.', '_');
             var imageDiv = document
-                .getElementById('banners')
-                .appendChild(document.createElement('p'));
+            .getElementById('banners')
+            .appendChild(document.createElement('div'));
             imageDiv.id = divID;
-            imageDiv.classList.add('bannerName', 'bannersContainer');
+            imageDiv.classList.add('bannerContainer');
             divArray.push(divID);
 
-            imageDiv.appendChild(document.createTextNode(Name));
+            let imageName = imageDiv.appendChild(document.createElement('p'));
+            imageName.appendChild(document.createTextNode(Name));
+            imageName.classList.add('bannerName');
 
             var Image = imageDiv.appendChild(document.createElement('img'));
             Image.setAttribute('src', Link);
             Image.setAttribute('loading', 'lazy');
+            Image.setAttribute('draggable', 'false')
+            Image.classList.add('banner');
 
             imageDiv.appendChild(document.createElement('hr'));
 
