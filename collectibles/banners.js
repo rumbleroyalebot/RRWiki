@@ -60,7 +60,7 @@ fetch('../databases/banners.json')
             imageDiv.addEventListener('click', () => {
                 document
                     .getElementById(divArray[i])
-                    .children[0].classList.toggle('bigimage');
+                    .children[1].classList.toggle('bigimage');
             });
         }
     });
