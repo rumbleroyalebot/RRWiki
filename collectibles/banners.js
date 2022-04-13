@@ -54,7 +54,7 @@ fetch('../databases/banners.json')
             Image.setAttribute('draggable', 'false')
             Image.classList.add('banner');
 
-            imageDiv.appendChild(document.createElement('hr'));
+            document.getElementById('banners').appendChild(document.createElement('hr'));
 
             // event listener
             imageDiv.addEventListener('click', () => {
