@@ -153,6 +153,57 @@ ul {
     padding: 0px;
 }
 
+/* ---- Collectibles ---- */
+
+
+#banners img {
+    margin: 3px;
+    position: relative;
+    margin-left:7vw;
+    height:65px;
+    width:180px;
+}
+
+#banners .bigimage {
+    height: 130px;
+    width: 360px
+}
+@media only screen and (min-width: 700px){
+    .banner {
+        height: 50px;
+        width: 120px;
+    }
+    #banners img {
+        height: 50px;
+        width: 120px;
+    }
+    #banners .bigimage {
+        height: 110px;
+        width: 300px
+    }
+}
+.bannerContainer {
+    align-self: center;
+    align-items: center;
+    display: inline-flex;
+}
+.bannerName {
+    min-width: 170px;
+}
+
+hr {
+    border: none;
+    border-top: 3px double var(--gold);
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+.dropdown_content {
+	display:none;
+}
+
 .eraLogo {
     width: 45px;
     height: 45px;
@@ -202,7 +253,6 @@ main {
 /* Header Styles */
 .page__header {
     position:absolute;
-    display: inline-flex;
     background-color: var(--TBlack);
     top: 0;
     width: 100%;
@@ -210,6 +260,7 @@ main {
 }
 
 .menu__link {
+    font-weight: normal;
     font-family: 'Kurale', serif;
     align-self: center;
     display: inline-block;
@@ -220,78 +271,46 @@ main {
     transition: ease 0.4s all;
 }
 
+.navbarContainer {
+    width: 98%;
+    margin: 0.5vw 1vw;
+    display: inline-flex;
+}
+
+.navbarContainer2 {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    margin-left: auto;
+}
+
+header a {
+    max-height: 50px;
+}
+
+#CTA {
+    opacity: 0.9;
+    border-radius: 10px;
+    border: solid 2px var(--orange);
+}
+
+#CTA:hover {
+    background: var(--BBlack)
+}
+
 .page__header .menu__link:hover {
-    background: var(--BBlack);
     color: var(--orange);
 }
 
 #current {
-    background: var(--BBlack);
     color: var(--gold);
 }
 
 .logo {
     border-radius: 10px;
-    width: 32px;
-    height: 32px;
-    z-index: 10;
+    width: 50px;
+    height: 50px;
 }
 
-.banner {
-    margin: 3px;
-    position: relative;
-    margin-left:7vw;
-    height:65px;
-    width:180px;
-}
-
-#banners img {
-    margin: 3px;
-    position: relative;
-    margin-left:7vw;
-    height:65px;
-    width:180px;
-}
-
-#banners .bigimage {
-    height: 130px;
-    width: 360px
-}
-@media only screen and (min-width: 700px){
-    .banner {
-        height: 50px;
-        width: 120px;
-    }
-    #banners img {
-        height: 50px;
-        width: 120px;
-    }
-    #banners .bigimage {
-        height: 110px;
-        width: 300px
-    }
-}
-.bannerContainer {
-    align-self: center;
-    align-items: center;
-    display: inline-flex;
-}
-.bannerName {
-    min-width: 170px;
-}
-
-hr {
-    border: none;
-    border-top: 3px double var(--gold);
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
-}
-
-.dropdown_content {
-	display:none;
-}
 /* Footer Styles */
 
 .page__footer {

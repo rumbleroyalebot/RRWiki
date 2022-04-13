@@ -29,20 +29,13 @@
 }
 
 .main{
-    margin:0;
-    min-height: 100vh;
+    min-height: 60vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow:visible;
 }
 
 .main__header{
     margin: 0;
     font-size: calc(1em + 7vmin);
-    position: absolute;
-    bottom: 30vh;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -50,16 +43,10 @@
 
 }
 
-.layer{
-    position: absolute;
-    bottom: 1.5vw;
-    
-
-}
-
 html {
   scroll-behavior: smooth;
 }
+
 ::selection {
     background: var(--gold);
     color: #121213;
@@ -171,20 +158,11 @@ ul {
 
 
 .win {
-    margin: 0;
 	align-items: flex-start;
     display: inline-block;
-	width: 100px;
-    height: 100px;
+	width: calc(1em + 10vmin);
+    height: calc(1em + 10vmin);
 
-}
-
-.layer {
-    aspect-ratio: 960/300;
-    opacity: 0.8;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
 }
 
 /* ---- Layout Rules ---- */
@@ -278,7 +256,7 @@ header a {
     background: var(--BBlack)
 }
 
-.page__header .menu__link:hover {
+.menu__link:hover {
     color: var(--orange);
 }
 
@@ -295,12 +273,29 @@ header a {
 
 /* Footer Styles */
 
+.layer {
+    position: relative;
+    opacity: 0.8;
+    width: 100%;
+}
+
+.preFooter {
+    width: 100%;
+    height: 400px;
+    background-color: var(--gold);
+}
+
+.preFooter .h2 {
+    color: black;
+}
+
 .page__footer {
     background: var(--BBlack);
     padding: 10px 0px 10px 10px;
 }
 
 .footerMain {
+    position: absolute;
     flex-direction: column;
     display: flex;
 }

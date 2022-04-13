@@ -19,12 +19,16 @@
 
 <body>
     <header class="page__header">
-        <a href="index.html" class="menu__link" title="Home"><img src="pics/Logo1.png" alt="Rumble Royale Logo" class="logo"></img></a>
-        <a href="collectibles.html" id="current" class="menu__link" >Collectibles</a>
+    <div class="navbarContainer">
+        <a href="index.html" class="menu__link" title="Home"><img src="pics/Logo1.png" alt="RR Logo" class="logo" /></a>
+        <a id="current" href="collectibles.html" class="menu__link">Collectibles</a>
         <a href="FAQs.html" class="menu__link">FAQs</a>
         <a href="leaderboard.html" class="menu__link">Leaderboard</a>
+        <div class="navbarContainer2">
+            <a href="https://discordapp.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot" target="_blank" class="menu__link" id="CTA">Invite to your server!</a>
+        </div>
+    </div>
     </header>
-
 
     <main>
         <button onclick="toTop()" id="top" title="Back to top"><ion-icon name="chevron-up-sharp"></ion-icon></button>
