@@ -55,8 +55,6 @@ html {
 body {
     color: #000000;
     background: var(--MBlack);
-    margin: 0px;
-    padding: 0px;
 }
 
 /* Typeography General*/
@@ -70,7 +68,6 @@ h1 {
     color: var(--gold);
     font-family: 'Rosario', sans-serif;
     margin-left: 0.7em;
-    margin-bottom: 0px;
 }
 
 
@@ -150,13 +147,6 @@ ul {
     color: var(--gold)
 }
 
-/* .main__header {
-	align-self: center;
-    align-items: center;
-    display: inline-flex;   
-} */
-
-
 .win {
 	align-items: flex-start;
     display: inline-block;
@@ -167,7 +157,7 @@ ul {
 
 /* ---- Layout Rules ---- */
 main {
-    margin: 12vh 0em 3vh;
+    margin-top: 12vh;
 }
 
 .landing__container {
@@ -214,8 +204,9 @@ main {
     position:absolute;
     background-color: var(--TBlack);
     top: 0;
+    left: 0;
     width: 100%;
-    z-index: 5;
+    z-index: 10;
 }
 
 .menu__link {
@@ -273,25 +264,60 @@ header a {
 
 /* Footer Styles */
 
-.layer {
-    position: relative;
-    opacity: 0.8;
+.layer0 {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
+    overflow: hidden;
+}
+
+.layer1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .preFooter {
+    font-family: 'Kurale', serif;
+    position: relative;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-color: var(--gold);
 }
 
 .preFooter .h2 {
-    color: black;
+    margin-top: 100px;
+    margin-left: 10vw;
+    color: var(--BBlack);
+    position: absolute;
+    z-index: 5;
+    text-decoration: none;
+}
+
+.preFooter .CTA {
+    border-radius: 10px;
+    border: solid 2px var(--BBlack);
+    background-color: var(--orange);
+    font-weight: normal;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--BBlack);
+    transition: ease 0.4s all;
+}
+
+.preFooter .CTA:hover {
+    background: var(--TBlack);
+    color: var(--orange);
 }
 
 .page__footer {
     background: var(--BBlack);
-    padding: 10px 0px 10px 10px;
 }
 
 .footerMain {
