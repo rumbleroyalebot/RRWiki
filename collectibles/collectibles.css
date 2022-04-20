@@ -365,3 +365,25 @@ header a {
     width: 50px;
     height: 50px;
 }
+
+@media (hover: hover) {
+   ::-webkit-scrollbar-thumb:hover {
+      background: var(--orange);
+   }
+   a:hover {
+      color: var(--orange);
+   }
+   #top:hover {
+      background: var(--BBlack);
+      color: var(--gold);
+   }
+   .socials:hover {
+      color: var(--white);
+   }
+   #CTA:hover {
+      background: var(--BBlack);
+   }
+   .page__header .menu__link:hover {
+      color: var(--orange);
+   }
+}
