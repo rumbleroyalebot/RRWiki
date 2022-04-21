@@ -209,59 +209,56 @@ main {
 }
 
 .cardBody {
-    width: 30%;
+    background-color: var(--silver);
+    margin-right: 5vw;
     border-radius: 10px;
     display: flex;
+    flex: 1 1 45%;
 }
 
 .cardImage {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     align-self: center;
     border-radius: 100%;
+    margin-right: 1em;
 }
 
 .cardText {
-    padding: 1vw;
-    flex: 1 auto;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .cardName {
-    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--BBlack);
+    font-family: 'Kurale', serif;
     font-size: 25px;
-    margin-top: 0px;
     margin-bottom: 10px;
     font-weight: 500;
 }
 
-.cardInfo {
-    font-size: 18px;
-    font-family: 'Quicksand', sans-serif;
-
+.cardSocials {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    height: 35px;
+    width: 100%;
+    bottom: 0px;
 }
 
-.cardButton {
-    padding-top: 20px;
-    text-align: center;
-}
-
-.cardButton a {
-    font-size: 16px;
-    color: #fff;
-    background-color: #198754;
-    border: 1px;
-    display: inline-block;
+.cardSocials a {
+    transition: ease 0.4s all;
+    margin-right: 1vw;
+    font-size: 35px;
     text-decoration: none;
-    cursor: pointer;
-    padding: 13px;
-    border-radius: 6px;
-    transition: color 0.4s;
-    margin-bottom: 10px;
-    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--orange);
 }
 
+.cardSocials a:hover {
+    opacity: 66%;
+}
 
-@media only screen and (max-width: 700px){
+/* @media only screen and (max-width: 700px){
     .container {
     padding: 2em;
     }
@@ -276,12 +273,7 @@ main {
     margin-top: 100px;
     height: 360px;
     }
-}
-
-
-
-
-
+} */
 
 
 /* Header Styles */
@@ -402,7 +394,8 @@ header a {
 }
 
 .footerMain {
-    width: 97%;
+    overflow: hidden;
+    width: 94%;
     position: absolute;
     flex-direction: column;
     display: flex;
@@ -444,7 +437,6 @@ header a {
 .footerElement {
     display: flex;
     flex-direction: column;
-    flex: 1 1 0%;
 }
 
 .footerLogo {
@@ -455,7 +447,7 @@ header a {
 .footerContainer a {
     font-weight: normal;
     color: var(--gold);
-    transition: color 0.4s;
+    transition: ease 0.4s all;
     text-decoration: none;
 }
   
