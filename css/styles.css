@@ -224,6 +224,10 @@ main {
     margin-right: 1em;
 }
 
+.cardInfo {
+    width: 100%;
+}
+
 .cardText {
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
