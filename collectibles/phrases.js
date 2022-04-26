@@ -1,8 +1,7 @@
 // Importing JSON files:
 // Phrases 2.5/4:
 
-
-fetch("../databases/phrases.json")
+fetch('../phrases.json')
    .then((resp) => {
       return resp.json();
    })
@@ -12,6 +11,7 @@ fetch("../databases/phrases.json")
             .getElementById('phrases')
             .appendChild(document.createElement('p'));
          mainCategs.id = a;
+         mainCategs.classList.add('bannerName', 'bannersContainer');
          mainCategs
             .appendChild(document.createElement('h1'))
             .appendChild(
@@ -21,9 +21,9 @@ fetch("../databases/phrases.json")
          for (let i in data[a]) {
             var eraDiv = document
                .getElementById(a)
-               .appendChild(document.createElement('div'));
+               .appendChild(document.createElement('details'));
             eraDiv
-               .appendChild(document.createElement('h2'))
+               .appendChild(document.createElement('summary'))
                .appendChild(
                   document.createTextNode(
                      i.charAt(0).toUpperCase() + i.slice(1)
@@ -54,9 +54,11 @@ fetch("../databases/phrases.json")
                      document
                         .getElementById(`${j}_${i}_${a}`)
                         .classList.toggle('dropdown_content');
+                     // console.log(`${j}_${i}_${a}`);
                   });
                }
             }
          }
       }
    });
+
