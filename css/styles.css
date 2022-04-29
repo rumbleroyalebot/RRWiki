@@ -28,6 +28,10 @@
     background: var(--orange);
 }
 
+::marker {
+    color: var(--gold);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -224,6 +228,7 @@ main {
     font-family: 'Kurale', serif;
     font-size: 25px;
     margin-bottom: 10px;
+    margin-top: 5px;
     font-weight: 500;
 }
 
@@ -249,7 +254,11 @@ main {
     opacity: 66%;
 }
 
-/* @media only screen and (max-width: 700px){
+.ContainerEnd {
+    flex: 0 1 45%;
+}
+
+@media only screen and (max-width: 700px){
     .container {
     padding: 2em;
     }
@@ -258,13 +267,14 @@ main {
     flex-direction: column;
 	align-self: center;
     align-items: center;
+    margin-top: 0px;
     }
-    .card {
-    width: 80%;
-    margin-top: 100px;
-    height: 360px;
+    .cardBody {
+        margin-right: 0px;
+        margin-top: 20px;
+        width: 100%;
     }
-} */
+}
 
 
 /* Header Styles */
