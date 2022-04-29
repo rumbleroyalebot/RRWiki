@@ -70,10 +70,11 @@ body {
     font-family: 'Rosario', sans-serif;
     font-size: 2.5rem;
     color: var(--gold);
-    display: block;
 }
 
 h3 {
+    display: flex;
+    align-items: center;
 	text-decoration: underline var(--orange);
     font-size: 1.5rem;
     font-family: 'Rosario', sans-serif;
@@ -157,18 +158,16 @@ main {
 .landing__container {
     padding: 1em;
 }
- /* Reached here */
+
 .slide1 {
-    display: block;
     align-items: center;
-    display: inline-flex;
+    display: flex;
     margin-top: 130px;
 }
 
 .slide2 {
-    display: block;
     align-items: center;
-    display: inline-flex;
+    display: flex;
     flex-direction: row-reverse;
     margin-top: 130px;
 }
@@ -183,8 +182,8 @@ main {
 }
 
 .slideImage {
-    width: 450px;
-    height: 450px;
+    width: 30vw;
+    height: 30vw;
     margin: 10px;
 }
 
@@ -291,8 +290,7 @@ main {
     font-weight: normal;
     font-family: 'Kurale', serif;
     align-self: center;
-    display: inline-block;
-    font-size: calc(0.3rem + 2vmin);
+    font-size: calc(0.5rem + 1.5vmin);
     padding: 10px;
     text-decoration: none;
     color: var(--silver);
@@ -339,11 +337,19 @@ main {
 }
 
 .logo {
+    margin: 0px;
     border-radius: 10px;
 	width: calc(1rem + 6vmin);
     height: calc(1rem + 6vmin);
 }
 
+@media only screen and (max-width: 600px){
+    .menu__link {
+        font-size: calc(5px +0.3rem + 1.5vmin);
+        padding: 5px;
+    }
+    
+}
 
 /* Footer Styles */
 
@@ -362,12 +368,13 @@ main {
 }
 
 .preFooter {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     font-family: 'Kurale', serif;
     background-color: var(--gold);
+    margin-top: 3rem;
 }
 
 .preFooter .h2 {
@@ -465,5 +472,13 @@ main {
   
 .footerContainer a:hover {
     color: var(--white);
-  }
-  
+}
+
+@media only screen and (max-width: 600px){
+    .preFooter span {
+        font-size: 6vmin;
+    }
+    .preFooter .CTA {
+        font-size: calc( 0.3em + 2vmin);
+    }
+}
