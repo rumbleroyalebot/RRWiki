@@ -12,6 +12,7 @@
     --MBlack: #121214; /* --- Middle Black --- */
     --BBlack: #000000; /* --- Bottom Black --- */
     --white: #ffffff;
+    --slideImg: calc(10px+50px);
 }
 
 ::-webkit-scrollbar {
@@ -44,6 +45,7 @@ html {
 body {
     color: var(--white);
     background: var(--MBlack);
+    margin: 0px;
 }
 
 /* Typeography General*/
@@ -82,6 +84,13 @@ h3 {
 }
 
 p {
+    line-height: 1.6em;
+    font-size: 20px;
+    color: var(--silver);
+    font-family: 'Alef', sans-serif; 
+}
+
+span {
     line-height: 1.6em;
     font-size: 20px;
     color: var(--silver);
@@ -159,21 +168,23 @@ main {
     padding: 1em;
 }
 
-.slide1 {
-    align-items: center;
+.slideContainer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
     margin-top: 130px;
 }
 
 .slide2 {
-    align-items: center;
-    display: flex;
     flex-direction: row-reverse;
-    margin-top: 130px;
 }
 
 .slideText {
-    margin: 5px;
 }
 
 .slideTitle {
@@ -185,6 +196,20 @@ main {
     width: 30vw;
     height: 30vw;
     margin: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .slide {
+        flex-direction: column;
+        margin-top: 10vh;
+        max-width: 450px;
+    }
+    .slideImage {
+        margin: 0px;
+        width: 100%;
+        height: 300px;
+        max-width: 520px;
+    }
 }
 
 /* Teams page */
@@ -213,7 +238,8 @@ main {
 }
 
 .cardInfo {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin: 5px;
 }
@@ -221,6 +247,7 @@ main {
 .cardText {
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
+    margin-bottom: 5px;
 }
 
 .cardName {
@@ -232,13 +259,12 @@ main {
 }
 
 .cardSocials {
-    position: relative;
     display: flex;
     justify-content: center;
     margin: 5px;
     height: 35px;
     width: 100%;
-    bottom: 0;
+    margin-top: auto;
 }
 
 .cardSocials a {
@@ -337,7 +363,6 @@ main {
 }
 
 .logo {
-    margin: 0px;
     border-radius: 10px;
 	width: calc(1rem + 6vmin);
     height: calc(1rem + 6vmin);
@@ -353,18 +378,8 @@ main {
 
 /* Footer Styles */
 
-.layer0 {
-    left: 0;
-    top: 0;
+.layer {
     width: 100%;
-    overflow: hidden;
-}
-
-.layer1 {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    overflow: hidden;
 }
 
 .preFooter {
@@ -375,6 +390,7 @@ main {
     font-family: 'Kurale', serif;
     background-color: var(--gold);
     margin-top: 3rem;
+    overflow: hidden;
 }
 
 .preFooter .h2 {
@@ -408,16 +424,13 @@ main {
     font-size: 1.3rem;
 }
 
-.page__footer {
-    background: var(--BBlack);
-}
-
-.footerMain {
+footer {
     overflow: hidden;
-    width: 94%;
+    width: 100%;
     position: absolute;
     flex-direction: column;
     display: flex;
+    background: var(--BBlack);
 }
 
 .footerText {
@@ -442,13 +455,13 @@ main {
 }
 
 .footerContainer {
-    padding: 3vw;
+    padding: 2.5vw;
     display: flex;
     justify-content: space-between;
 }
 
 .footerHeader {
-    padding: 3vw;
+    padding: 2.5vw;
     display: inline-flex;
     align-items: center;
 }
@@ -476,9 +489,13 @@ main {
 
 @media only screen and (max-width: 600px){
     .preFooter span {
-        font-size: 6vmin;
+        margin-left: 5px;
+        font-size: 5vmin;
     }
     .preFooter .CTA {
-        font-size: calc( 0.3em + 2vmin);
+        font-size: calc(0.3em + 2vmin);
+    }
+    .layer {
+        width: 200%;
     }
 }
