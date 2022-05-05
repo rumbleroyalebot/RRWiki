@@ -215,7 +215,7 @@ main {
 /* Teams page */
 
 .cardContainer {
-    margin-top: 5vh;
+    margin-top: 5vmin;
     justify-content: space-around;
     width: 100%;
     display: inline-flex;
