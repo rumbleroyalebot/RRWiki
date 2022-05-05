@@ -1,7 +1,7 @@
 // Importing JSON files:
 // Phrases 2.5/4:
 
-fetch('/RRWiki/databases/phrases.json')
+fetch('../databases/phrases.json')
    .then((resp) => {
       return resp.json();
    })
