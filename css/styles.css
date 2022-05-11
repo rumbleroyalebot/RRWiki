@@ -341,7 +341,7 @@ main {
 
 /* Header Styles */
 .page__header {
-    position:absolute;
+    position: fixed;
     background-color: var(--TBlack);
     top: 0;
     left: 0;
