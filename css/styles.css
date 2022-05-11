@@ -234,7 +234,19 @@ main {
     height: 125px;
     align-self: center;
     border-radius: 100%;
-    margin-right: 1em;
+    margin: 5px;
+    margin-right: 2vmin;
+}
+
+.ImgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImgContainer .HeadBadge {
+    display: none;
 }
 
 .cardInfo {
@@ -256,6 +268,24 @@ main {
     margin-bottom: 10px;
     margin-top: 5px;
     font-weight: 500;
+}
+
+.cardHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.HeadBadge {
+    display: flex;
+    justify-content: center;
+    margin-left: 1vmin;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Kurale', serif;
+    background-color: var(--gold);
+    color: var(--MBlack);
 }
 
 .cardSocials {
@@ -298,6 +328,13 @@ main {
         margin-right: 0px;
         margin-top: 20px;
         width: 100%;
+    }
+    .HeadBadge {
+        display: none;
+    }
+    .ImgContainer .HeadBadge {
+        display: flex;
+        margin: 5px;
     }
 }
 
@@ -370,7 +407,7 @@ main {
 
 @media only screen and (max-width: 600px){
     .menu__link {
-        font-size: calc(5px +0.3rem + 1.5vmin);
+        font-size: calc(2px + 0.3rem + 1.5vmin);
         padding: 5px;
     }
     
@@ -497,5 +534,9 @@ footer {
     }
     .layer {
         width: 200%;
+    }
+    .CTAContainer {
+        margin-left: 4vmin;
+        width: calc(3em + 20vmin);
     }
 }
