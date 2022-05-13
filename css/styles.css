@@ -8,11 +8,9 @@
 	--orange: #ff9000; /* --- For code --- */
 	--gold: #e2ad1a; /* --- For highlighting --- */
 	--silver: #BDC3C7; /* --- Normal text --- */
-    --TBlack: #1f1f1f; /* --- Top Black --- */
-    --MBlack: #121214; /* --- Middle Black --- */
+    --MBlack: #121214; /* --- Main Black --- */
     --BBlack: #000000; /* --- Bottom Black --- */
     --white: #ffffff;
-    --slideImg: calc(10px+50px);
 }
 
 ::-webkit-scrollbar {
@@ -48,24 +46,23 @@ body {
     margin: 0px;
 }
 
-/* Typeography General*/
-
-.main__header {
-    min-height: 60vh;
-    font-size: calc(2em + 6vmin);
-    font-family: 'Rosario', sans-serif;
+.gold {
     color: var(--gold);
-    display: flex;
-    justify-content: center;
-    align-items:center;
-
 }
 
-@media only screen and (max-width: 600px){
-    .main__header {
-        font-size: calc(1em + 6vmin);
-    }
+.orange {
+	color: var(--orange);
 }
+
+.code {
+	color: var(--orange);
+}
+
+.silver {
+	color: var(--silver);
+}
+
+/* Typeography General*/
 
 .h2 {
     text-decoration: underline var(--gold);
@@ -84,14 +81,12 @@ h3 {
 }
 
 p {
-    line-height: 1.6em;
     font-size: 20px;
     color: var(--silver);
     font-family: 'Alef', sans-serif; 
 }
 
 span {
-    line-height: 1.6em;
     font-size: 20px;
     color: var(--silver);
     font-family: 'Alef', sans-serif; 
@@ -114,21 +109,6 @@ ul {
     margin-bottom: 1em;
 }
 
-.gold {
-    color: var(--gold);
-}
-
-.orange {
-	color: var(--orange);
-}
-
-.code {
-	color: var(--orange);
-}
-
-.silver {
-	color: var(--silver);
-}
 
 #top {
     position: fixed;
@@ -152,17 +132,7 @@ ul {
     color: var(--gold)
 }
 
-.win {
-    display: inline-block;
-	width: calc(1em + 10vmin);
-    height: calc(1em + 10vmin);
-
-}
-
 /* ---- Layout Rules ---- */
-main {
-    margin-top: 12vh;
-}
 
 .landing__container {
     padding: 1em;
@@ -190,6 +160,7 @@ main {
 .slideTitle {
     font-size: 36px;
     font-weight: bold;
+    font-family: 'Rosario', sans-serif;
 }
 
 .slideImage {
@@ -341,8 +312,8 @@ main {
 
 /* Header Styles */
 .page__header {
-    position: fixed;
-    background-color: var(--TBlack);
+    position: sticky;
+    background-color: var(--MBlack);
     top: 0;
     left: 0;
     width: 100%;
@@ -384,11 +355,7 @@ main {
 
 #CTA {
     border-radius: 10px;
-    border: solid 2px var(--orange);
-}
-
-#CTA:hover {
-    background: var(--BBlack)
+    border: solid 2px var(--gold);
 }
 
 .menu__link:hover {
@@ -410,7 +377,94 @@ main {
         font-size: calc(2px + 0.3rem + 1.5vmin);
         padding: 5px;
     }
-    
+}
+
+/* Page Hero Rules */
+
+.pageHero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 66vh;
+}
+
+.heroHeader {
+    font-size: calc(2em + 6vmin);
+    font-family: 'Rosario', sans-serif;
+    color: var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImage {
+    display: inline-block;
+	width: calc(1em + 8vmin);
+    height: calc(1em + 8vmin);
+}
+
+.heroTextContainer {
+    margin: 3vmin 2vmin 0px;
+}
+
+.heroTextContainer span {
+    font-size: calc(0.5em + 2vmin);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.heroCTAContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vmin;
+}
+
+.heroCTACont {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: solid 2px var(--gold);
+    margin-left: 1vw;
+    width: 200px;
+    height: 50px;
+}
+
+.heroCTA {
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: var(--BBlack);
+    font-weight: normal;
+    font-family: 'Kurale', serif;
+    align-self: center;
+    text-decoration: none;
+    color: var(--silver);
+    transition: ease 0.4s all;
+}
+
+.heroCTA:hover {
+    font-size: 1.3rem;
+    color: var(--silver);
+}
+
+@media only screen and (max-width: 600px){
+    .heroHeader {
+        font-size: calc(1em + 6vmin);
+    }
+    .heroTextContainer {
+        margin-top: 10vmin;
+    }
+    .heroCTA {
+        font-size: calc(0.3em + 2vmin);
+    }
+    .heroCTACont {
+        margin-top: 10vmin;
+        margin-left: 6vmin;
+        width: calc(3em + 20vmin);
+    }
+    .heroCTACont {
+        height: 40px;
+    }
 }
 
 /* Footer Styles */
