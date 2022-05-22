@@ -64,5 +64,5 @@ hr {
     margin-block-start: 15px;
     margin-block-end: 15px;
     line-height: normal;
-    font-size: 25px;
+    font-size: calc(1.1rem + 0.7vmax);
 }

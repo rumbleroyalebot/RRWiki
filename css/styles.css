@@ -67,7 +67,7 @@ body {
 .h2 {
     text-decoration: underline var(--gold);
     font-family: 'Rosario', sans-serif;
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     color: var(--gold);
 }
 
@@ -135,7 +135,7 @@ ul {
 /* ---- Layout Rules ---- */
 
 .landing__container {
-    padding: 1em;
+    padding: 2em;
 }
 
 .slideContainer {
@@ -605,11 +605,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+    margin-inline: 1.5vw;
 }
 
 .card{
-    background-color: var(--TBlack);
+    background-color: #1f1f1f;
     padding: 3vh;
     border-radius: 15px;
     margin-block: 2vmax;
@@ -637,4 +637,49 @@ footer {
     color:var(--white);
     text-decoration:underline;
     
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .collect{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+
+.dropdown-content {
+    border-radius: 20px;
+    display: none;
+    position: absolute;
+    background-color: var(--BBlack);
+    min-width: 9vmax;
+    box-shadow: 0px 8px 16px 1px rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: var(--silver);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    color: var(--orange);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.content, .content p, .gold, .content h3, .content h1, .content details, .content li{
+    margin-block: 4vmax;
+    font-size: calc(1.1rem + .7vmax);
 }
