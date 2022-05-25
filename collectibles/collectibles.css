@@ -44,13 +44,50 @@ hr {
     height: 5px;
 }
 
-.dropdown_content {
-	display:none;
+/*Banner Card Styles*/
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-inline: 1.5vw;
+}
+
+.card{
+    background-color: #1f1f1f;
+    padding: 3vh;
+    border-radius: 15px;
+    margin-block: 2vmax;
+    transition: ease-out 0.3s all;
+    color: var(--silver);
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.241);
+    
+}
+
+.card-img{
+    max-width: 20vmax;
+}
+
+.card-text{
+    font-size: calc(0.3em + 2vmin);
+    text-align: center;
+    font-weight: bolder;
+    color: inherit;
+}
+
+.card:hover{
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.775);
+    transform: scale(1.15);
+    transition: ease 0.3s all;
+    color:var(--white);
+    text-decoration:underline;
+    
 }
 
 .eraLogo {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     margin-right: 8px;
 }
 
@@ -61,8 +98,6 @@ hr {
 }
 
 .eraName {
-    margin-block-start: 15px;
-    margin-block-end: 15px;
     line-height: normal;
     font-size: calc(1.1rem + 0.7vmax);
 }

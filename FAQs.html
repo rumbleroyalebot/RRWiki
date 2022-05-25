@@ -20,44 +20,34 @@
     <header class="page__header">
     <div class="navbarContainer">
         <div class="navbarContainer0">
-            <a id="current" href="index.html" class="menu__link" title="Home"><img src="pics/Logo1.webp" alt="RR Logo" class="logo" /></a>
+            <a href="index.html" class="menu__link" title="Home"><img src="pics/Logo1.webp" alt="RR Logo" class="logo" /></a>
         </div>
-        <a href="collectibles.html" class="menu__link">Collectibles</a>
+    <!-- dropdown menu -->
+        <div class="dropdown menu__link">
+            <button class="collect">Collectibles<ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+            <div class="dropdown-content">
+                <a href="collectibles/eras.html" class="drop-item">Eras</a>
+                <a href="collectibles/skins.html" class="drop-item">Skins</a>
+                <a href="collectibles/phrases.html" class="drop-item">Phrases</a>
+                <a href="collectibles/banners.html" class="drop-item">Banners</a>
+                <a href="collectibles/titles.html" class="drop-item">Titles</a>
+            </div>
+        </div>
         <a id="current" href="FAQs.html" class="menu__link">FAQs</a>
         <a href="leaderboard.html" class="menu__link">Leaderboard</a>
         <div class="navbarContainer2">
-            <a href="https://discordapp.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot" target="_blank" class="menu__link" id="CTA">Invite to your server!</a>
+            <a href="https://discordapp.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot" target="_blank" class="menu__link" id="CTA">Invite!</a>
         </div>
     </div>
     </header>
-
     
     <main>
-
-        <!-- Hero -->
-                <div class="pageHero">
-
-                    <div class="heroHeader">Rumble Royale
-                      <img draggable="false" src="pics/win.webp" alt="RR Logo" class="heroImage" />
-                    </div>
-                    <div class="heroTextContainer">
-                        <span>A text-based</span><span class="gold"> Battle Royale </span><span>Discord bot. Spice up your server with epic battles and more!</span>
-                    </div>
-                    <div class="heroCTAContainer">
-                        <div class="heroCTACont">
-                            <a href="https://discordapp.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot" target="_blank" class="heroCTA">Invite to your server!</a>
-                        </div>
-                        <div class="heroCTACont">
-                            <a href="https://discord.gg/XfbmXU2WY8" target="_blank" class="heroCTA">Support Server</a>
-                        </div>
-                    </div>
-                </div>
-
-        <!-- Main Content -->
+        <!-- MAIN CONTENT -->
 
 <section>
     <div class="landing__container">
-    	<h3>Frequently Asked Questions:</h3>
+    	<h1>Frequently Asked Questions:</h1>
     <p><span class= "gold">How do I set it so that only admins/mods can start battles?</span>
     <br>You can do that by allowing only a certain role to send messages in that channel.
 
@@ -115,7 +105,7 @@
 <div class="preFooter">
     <img draggable="false" src="pics/layer0.svg" class="layer" />
     <div>
-        <span class="h2">Ready to rumble?
+        <span>Ready to rumble?
         <div class="CTAContainer">
             <a href="https://discordapp.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot" target="_blank" class="CTA">Invite to your server!</a>
         </div>
