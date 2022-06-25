@@ -11,14 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alef&family=Kurale&family=Roboto+Mono:wght@500&family=Rosario:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="pics/Logo1.webp" type="image/icon type">
+    <link rel="icon" href="pics/logo.svg" type="image/webp">
 </head>
 
 <body>
-    <header class="page__header">
-    <div class="navbarContainer">
-        <div class="navbarContainer0">
-            <a id="current" href="index.html" class="menu__link" title="Home"><img src="pics/Logo1.webp" alt="RR Logo" class="logo" /></a>
+    <header>
+        <div class="headerStart">
+            <a id="current" href="index.html" class="menu__link" title="Home"><img src="pics/logo.svg" alt="RR Logo" class="logo" /></a>
         </div>
     <!-- dropdown menu -->
     <div class="dropdown menu__link">
@@ -34,10 +33,12 @@
     </div>
     <a href="FAQs.html" class="menu__link">FAQs</a>
     <a href="leaderboard.html" class="menu__link">Leaderboard</a>
-    <div class="navbarContainer2">
-        <a href="https://discord.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot%20applications.commands" target="_blank" class="menu__link" id="CTA">Invite!</a>
+    <div class="headerEnd">
+        <a href="https://discord.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot%20applications.commands" target="_blank" class="menu__link" id="CTA">
+            <span class="CTAPC">Invite to your server</span>
+            <span class="CTAPhone">Invite!</span>
+        </a>
     </div>
-</div>
 </header>
     
         <!-- Hero -->
@@ -67,22 +68,30 @@
                 <h1>About the bot:</h1>
                 <div class="slideContainer">
                     <div class="slide">
-                        <img draggable="false" src="pics/slide1.webp" class="slideImage" />
+                        <img draggable="false" src="https://media.discordapp.net/attachments/683819168709214361/983269504471691294/title_select.gif" class="slideImage" />
                         <div class="slideText">
                             <span class="slideTitle">Easy to setup</span>
                             <p>Setting up Rumble Royale in your server is extremely easy. Get up and running with exciting battles in minutes! Need help setting it up? Just open a support ticket in our main server.</p>
                         </div>
                     </div>
 
-                    <div class="slide slide2">
-                        <img draggable="false" src="pics/background.webp" class="slideImage" />
+                    <div class="slide slide2 spacing">
+                        <img draggable="false" src="https://media.discordapp.net/attachments/683819168709214361/983269504471691294/title_select.gif" class="slideImage" />
                         <span class="slideText">
                             <span class="slideTitle">Fun and Engaging</span>
                             <p>Invited the bot to your server, but not sure what to do next? You can type <span class= "code">/help</span> command for a list of all commands and other info about the bot. </p>
                         </span>
                     </div>
+
+                    <div class="slide spacing">
+                        <img draggable="false" src="https://media.discordapp.net/attachments/683819168709214361/983269504471691294/title_select.gif" class="slideImage" />
+                        <div class="slideText">
+                            <span class="slideTitle">Automation</span>
+                            <p>Automatic battles allow you to constantly run events for your community with no hassle. Get started by <span class="code">/automatic setup</span></p>
+                        </div>
+                    </div>
+
                 </div>
-                                <!-- Automation -->
             </div>
         </section>
 
@@ -104,26 +113,25 @@
 
     <footer>
             <div class="footerHeader">
-                <img src="pics/logov3.webp" draggable="false" alt="RR Logo" class="footerLogo"><span class="footerH1">Rumble Royale</span></img>
+                <span class="footerH1">Rumble Royale</span>
+                <img src="pics/win.webp" draggable="false" alt="RR Logo" class="footerLogo"></img>
             </div>
-        
                 <div class="footerContainer">
                     
                     <div class="footerElement">
-                        <span class="footerTitle">Connect</span>
-                        <span class="footerText"><a href="https://discord.gg/XfbmXU2WY8" target="_blank"><ion-icon name="logo-discord"></ion-icon> Join our server!</a></span>
-                        <span class="footerText"><a href="https://twitter.com/RumbleRoyaleGG" target="_blank"><ion-icon name="logo-twitter"></ion-icon> Follow us on Twitter!</a></span>
-                        <span class="footerText"><a href="https://top.gg/bot/693167035068317736/vote" target="_blank"><ion-icon name="arrow-up-circle-sharp"></ion-icon> Vote for us on top.gg!</a></span>
+                        <p class="footerTitle">Connect</p>
+                        <p class="footerText"><a href="https://discord.gg/XfbmXU2WY8" target="_blank"><ion-icon name="logo-discord"></ion-icon> Join our server</a></p>
+                        <p class="footerText"><a href="https://twitter.com/RumbleRoyaleGG" target="_blank"><ion-icon name="logo-twitter"></ion-icon> Follow us on Twitter</a></p>
+                        <p class="footerText"><a href="https://top.gg/bot/693167035068317736/vote" target="_blank"><ion-icon name="arrow-up-circle-sharp"></ion-icon> Vote for us on top.gg</a></p>
                     </div>
 
                     <div class="footerElement">
-                        <span class="footerTitle">Information</span>
-                        <span class="footerText"><a href="team.html">The RR team</a></span>
-                        <span class="footerText">Bot by <span class= "gold">Niels van Vliet</span></span>
+                        <p class="footerTitle">Information</p>
+                        <p class="footerText"><a href="team.html">The RR team</a></p>
+                        <p class="footerText"><a href="stats.html">Bot stats</a></p>
                     </div>
                 </div>
     </footer>
-
 
 <script src="js/app.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
