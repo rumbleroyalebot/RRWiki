@@ -344,6 +344,34 @@
             "price": 100
         },
         {
+            "item": "shotgun",
+            "skin": "rusty",
+            "era": "zombie",
+            "cost": "gold",
+            "price": 35000
+        },
+        {
+            "item": "club",
+            "skin": "rusty",
+            "era": "zombie",
+            "cost": "gold",
+            "price": 35000
+        },
+        {
+            "item": "crowbar",
+            "skin": "rusty",
+            "era": "zombie",
+            "cost": "gold",
+            "price": 35000
+        },
+        {
+            "item": "chainsaw",
+            "skin": "rusty",
+            "era": "zombie",
+            "cost": "gold",
+            "price": 50000
+        },
+        {
             "item": "wolf",
             "skin": "moon",
             "era": "classic",

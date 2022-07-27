@@ -2,7 +2,7 @@
 
 // Shop Items 1/4:
 
-// Classic Era 1/7:
+// Classic Era 1/8:
 fetch("../databases/shop_items.json")
   .then((resp) => {
     return resp.json();
@@ -20,7 +20,7 @@ fetch("../databases/shop_items.json")
     }
   });
 
-// Modern Era 2/7:
+// Modern Era 2/8:
 fetch("../databases/shop_items.json")
   .then((resp) => {
     return resp.json();
@@ -38,7 +38,7 @@ fetch("../databases/shop_items.json")
     }
   });
 
-// Futuristic Era 3/7:
+// Futuristic Era 3/8:
 fetch("../databases/shop_items.json")
 .then((resp) => {
   return resp.json();
@@ -56,7 +56,7 @@ fetch("../databases/shop_items.json")
   }
 });
 
-// Medieval Era 4/7:
+// Medieval Era 4/8:
 fetch("../databases/shop_items.json")
   .then((resp) => {
     return resp.json();
@@ -74,7 +74,7 @@ fetch("../databases/shop_items.json")
     }
   });
 
-// Pirate Era 5/7:
+// Pirate Era 5/8:
 fetch("../databases/shop_items.json")
 .then((resp) => {
   return resp.json();
@@ -92,7 +92,7 @@ fetch("../databases/shop_items.json")
   }
 });
 
-// Samurai Era 6/7:
+// Samurai Era 6/8:
 fetch("../databases/shop_items.json")
   .then((resp) => {
     return resp.json();
@@ -111,7 +111,7 @@ fetch("../databases/shop_items.json")
   });
 
 
-// Steampunk Era 7/7:
+// Steampunk Era 7/8:
 fetch("../databases/shop_items.json")
 .then((resp) => {
   return resp.json();
@@ -128,6 +128,24 @@ fetch("../databases/shop_items.json")
     }
   }
 });
+
+// Zombie Era 6/8:
+fetch("../databases/shop_items.json")
+  .then((resp) => {
+    return resp.json();
+  })
+  .then((data) => {
+    var skins = data["skins"];
+    var skindiv = document.getElementById("zombieSkins");
+    for (let i in skins) {
+      if (skins[i]["era"] === "zombie") {
+        skindiv.innerHTML =
+          skindiv.innerHTML +
+          ("<p>Name:<span class = 'gold'> " + skins[i]["skin"] + " " + skins[i]["item"] + "</span><br />") +
+          ("Cost: " + skins[i]["price"] + " " + skins[i]["cost"] + "</p>");
+      }
+    }
+  });
 
 // Old Event Shop Items 1.5/4:
 
