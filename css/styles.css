@@ -129,7 +129,7 @@ ul {
     background-color: var(--gold);
     color: var(--BBlack);
     cursor: pointer;
-    padding: 12px;
+    padding: 10px;
     border-radius: 10px;
     font-size: 25px;
     text-decoration: none;
@@ -390,12 +390,20 @@ header {
 }
 
 .CTAPhone {
+    color: inherit;
     display: none;
     font-size: inherit;
+    transition: ease 0.4s all;
 }
 
 .CTAPC {
+    color: inherit;
     font-size: inherit;
+    transition: ease 0.4s all;
+}
+
+#CTA:hover {
+    color: var(--orange);
 }
 
 .menu__link:hover {
@@ -491,7 +499,7 @@ header {
 .heroHeader {
     font-size: calc(2em + 6vmin);
     font-family: 'Rosario', sans-serif;
-    color: var(--gold);
+    color: var(--orange);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -513,36 +521,38 @@ header {
 }
 
 .heroCTAContainer {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
     margin-top: 3vmin;
 }
 
-.heroCTACont {
+.heroCTA {
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    border: solid 2px var(--gold);
-    margin-left: 1vw;
-    width: 200px;
-    height: 50px;
-}
-
-.heroCTA {
+    border: solid 2px var(--orange);
     font-weight: normal;
     font-size: 1.2rem;
-    color: var(--BBlack);
-    font-weight: normal;
     font-family: 'Kurale', serif;
     align-self: center;
     text-decoration: none;
+    padding: 10px;
     color: var(--silver);
     transition: ease 0.4s all;
 }
 
-.heroCTA:hover {
-    font-size: 1.3rem;
-    color: var(--silver);
+.heroCTAMain {
+    background-color: var(--orange);
+    color: var(--BBlack);
+    margin-left: 1vw;
+}
+
+.heroCTAMain:hover {
+    color: var(--orange);
+    background-color: var(--BBlack);
+    border: solid 2px var(--BBlack);
 }
 
 @media only screen and (max-width: 600px){
@@ -554,14 +564,6 @@ header {
     }
     .heroCTA {
         font-size: calc(0.3em + 2vmin);
-    }
-    .heroCTACont {
-        margin-top: 10vmin;
-        margin-left: 6vmin;
-        width: calc(3em + 20vmin);
-    }
-    .heroCTACont {
-        height: 40px;
     }
 }
 
@@ -590,6 +592,10 @@ header {
     text-decoration: none;
 }
 
+.preFooter span::selection {
+    background: var(--MBlack);
+    color: var(--gold);
+}
 .CTAContainer {
     display: flex;
     justify-content: center;
