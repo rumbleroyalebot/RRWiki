@@ -1,13 +1,13 @@
-let toTop = document.getElementById("top");
+let toTopButton = document.getElementById("top");
 window.onscroll = function () {
     scrollFunction();
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        toTop.style.display = "block";
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        toTopButton.style.display = "block";
     } else {
-        toTop.style.display = "none";
+        toTopButton.style.display = "none";
     }
 }
 function toTop() {
