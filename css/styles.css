@@ -1,13 +1,13 @@
 /* --- Fonts Importing --- */
 
-@import url('https://fonts.googleapis.com/css2?family=Alef&family=Kurale&family=Roboto+Mono:wght@500&family=Rosario:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alef&family=Kurale&family=Roboto+Mono:wght@500&family=Rosario:wght@700&display=swap");
 
 /* --- General Rules --- */
 
 :root {
-	--orange: #df8319; /* --- For code --- */ 
-	--gold: #e2a11e; /* --- For highlighting --- */ 
-	--silver: #BDC3C7; /* --- Normal text --- */
+    --primary: #df8319;
+    --gold: #e2a11e; /* --- For highlighting --- */
+    --silver: #bdc3c7; /* --- Normal text --- */
     --MBlack: #121214; /* --- Main Black --- */
     --BBlack: #000000; /* --- Bottom Black --- */
     --white: #ffffff;
@@ -18,26 +18,27 @@
     width: 11px;
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--gold);
+    background: var(--primary);
     border-radius: 100px;
 }
 ::-webkit-scrollbar-track {
     background: var(--MBlack);
 }
-::-webkit-scrollbar-thumb:hover{
-    background: var(--orange);
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
 }
 
 ::marker {
-    color: var(--gold);
+    color: var(--primary);
 }
 
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 ::selection {
-    background: var(--gold);
+    background: var(--primary);
     color: var(--MBlack);
 }
 
@@ -48,22 +49,28 @@ body {
 }
 
 .gold {
-    color: var(--gold);
+    color: var(--primary);
 }
 
 .orange {
-	color: var(--orange);
+    color: var(--primary);
 }
 
 .code {
-	color: var(--orange);
+    color: var(--primary);
 }
 
 .silver {
-	color: var(--silver);
+    color: var(--silver);
 }
 
-.content, .content p, .gold, .content h3, .content h1, .content details, .content li{
+.content,
+.content p,
+.gold,
+.content h3,
+.content h1,
+.content details,
+.content li {
     margin-block: 2vmax;
     font-size: calc(1.1rem + 0.7vmax);
 }
@@ -72,32 +79,30 @@ body {
 
 h1 {
     font-size: calc(1.2rem + 2.5vw);
-    color: var(--silver);
-    font-family: 'Alef', sans-serif; 
-    text-decoration: underline var(--gold);
-    font-family: 'Rosario', sans-serif;
-    color: var(--gold);
+    text-decoration: underline var(--primary);
+    font-family: "Rosario", sans-serif;
+    color: var(--primary);
 }
 
 h2 {
     display: flex;
     align-items: center;
-	text-decoration: underline var(--orange);
+    text-decoration: underline var(--primary);
     font-size: 1.3rem;
-    font-family: 'Rosario', sans-serif;
-    color: var(--silver);
+    font-family: "Rosario", sans-serif;
+    color: var(--white);
 }
 
 p {
     font-size: 20px;
     color: var(--silver);
-    font-family: 'Alef', sans-serif; 
+    font-family: "Alef", sans-serif;
 }
 
 span {
     font-size: 20px;
     color: var(--silver);
-    font-family: 'Alef', sans-serif; 
+    font-family: "Alef", sans-serif;
 }
 
 a {
@@ -108,16 +113,15 @@ a {
 }
 
 a:hover {
-    color: var(--orange)
+    color: var(--primary);
 }
 
 ul {
     font-size: 25px;
-    color: var(--silver);
-    font-family: 'Alef', sans-serif;
+    color: var(--white);
+    font-family: "Alef", sans-serif;
     margin-bottom: 1em;
 }
-
 
 #top {
     position: fixed;
@@ -126,30 +130,35 @@ ul {
     z-index: 10;
     border: none;
     outline: none;
-    background-color: var(--gold);
-    color: var(--BBlack);
+    background-color: var(--primary);
     cursor: pointer;
     padding: 10px;
     border-radius: 10px;
     font-size: 25px;
     text-decoration: none;
     transition: color 0.4s;
-  }
+}
+
+#top svg {
+    fill: var(--BBlack);
+    width: 20px;
+    height: 20px;
+}
 
 #top:hover {
     background: var(--BBlack);
-    color: var(--gold)
+}
+
+#top:hover svg {
+    fill: var(--primary);
 }
 
 /* ---- Layout Rules ---- */
 
-section {
-    max-width: 1377px;
+.landing__container {
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.landing__container {
     padding: 2em;
     margin-bottom: 3rem;
 }
@@ -164,50 +173,73 @@ section {
 .slide {
     display: flex;
     align-items: center;
+    column-gap: 2rem;
+    padding: 10px;
+    margin-top: 128px;
 }
 
-.slide2 {
-    flex-direction: row-reverse;
+.slide:first-child {
+    margin-top: 0px;
+}
+
+.slideEven {
+    width: 100vw;
     background-color: var(--BBlack);
-    border-radius: 20px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    margin-top: 128px;
+}
+
+.slideEvenContent {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    column-gap: 2rem;
+    padding: 10px;
 }
 
 .spacing {
     margin-top: 130px;
 }
 
-.slideText {
+.slideInfo {
     margin: 1rem;
 }
 
 .slideTitle {
     font-size: 36px;
+    color: var(--white);
     font-weight: bold;
-    font-family: 'Rosario', sans-serif;
+    font-family: "Rosario", sans-serif;
 }
 
 .slideImage {
     border-radius: 10px;
-    width: 30vw;
-    height: 30vw;
+    width: 35vw;
+    height: 42vw;
     margin: 10px;
-    max-width: 450px;
-    max-height: 450px;
+    max-width: 500px;
+    max-height: 660px;
+    object-fit: contain;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     .slideContainer {
         margin: 0px;
     }
-    .slide {
+    .slide,
+    .slideEvenContent {
         flex-direction: column;
         max-width: 450px;
     }
     .slideImage {
+        padding-top: 24px;
         margin: 0px;
         width: 100%;
         height: 300px;
-
     }
     .slide2 .slideImage {
         border-top-left-radius: 20px;
@@ -264,12 +296,12 @@ section {
 
 .cardText {
     font-size: 18px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     margin-bottom: 5px;
 }
 
 .cardName {
-    font-family: 'Kurale', serif;
+    font-family: "Kurale", serif;
     font-size: 25px;
     margin-bottom: 10px;
     margin-top: 5px;
@@ -289,8 +321,8 @@ section {
     padding: 5px;
     border-radius: 5px;
     font-size: 1rem;
-    font-family: 'Kurale', serif;
-    background-color: var(--gold);
+    font-family: "Kurale", serif;
+    background-color: var(--primary);
     color: var(--MBlack);
 }
 
@@ -308,7 +340,7 @@ section {
     margin-right: 1vw;
     font-size: 35px;
     text-decoration: none;
-    color: var(--orange);
+    color: var(--primary);
 }
 
 .cardSocials a:hover {
@@ -319,16 +351,16 @@ section {
     flex: 0 1 45%;
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
     .container {
-    padding: 2em;
+        padding: 2em;
     }
     .cardContainer {
-    display: flex;
-    flex-direction: column;
-	align-self: center;
-    align-items: center;
-    margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        margin-top: 0px;
     }
     .cardBody {
         margin-right: 0px;
@@ -344,7 +376,6 @@ section {
     }
 }
 
-
 /* Header Styles */
 header {
     position: sticky;
@@ -352,29 +383,31 @@ header {
     top: 0;
     left: 0;
     z-index: 10;
-    width: 99%;
-    padding: 0px 0.5vw;
+    width: 100%;
     display: inline-flex;
+    padding-top: 10px;
 }
 
 .menu__link {
     font-weight: normal;
-    font-family: 'Kurale', serif;
+    font-family: "Kurale", serif;
     align-self: center;
     font-size: calc(1rem + 0.2vmin);
     padding: 10px;
     text-decoration: none;
-    color: var(--silver);
+    color: var(--white);
     transition: ease 0.4s all;
 }
 
 .headerStart {
+    padding-left: 5vw;
     display: inline-flex;
     justify-content: center;
     align-self: center;
 }
 
 .headerEnd {
+    padding-right: 5vw;
     display: inline-flex;
     flex-direction: row-reverse;
     margin-left: auto;
@@ -386,7 +419,7 @@ header {
 
 #CTA {
     border-radius: 10px;
-    border: solid 2px var(--gold);
+    border: solid 2px var(--primary);
 }
 
 .CTAPhone {
@@ -403,49 +436,64 @@ header {
 }
 
 #CTA:hover {
-    color: var(--orange);
+    color: var(--primary);
 }
 
 .menu__link:hover {
-    color: var(--orange);
+    color: var(--primary);
 }
 
 #current {
-    color: var(--gold);
+    color: var(--primary);
+}
+
+#current svg {
+    fill: var(--primary);
 }
 
 .logo {
     border-radius: 10px;
-	width: var(--logo);
+    width: var(--logo);
     height: var(--logo);
 }
 
-.dropdown{
+.dropdown {
     float: left;
     overflow: hidden;
 }
 
-.dropdown .collect{
+.dropdown .collect {
+    display: flex;
     padding: 0;
     font-weight: normal;
-    font-family: 'Kurale', serif;
-    align-self: center;
+    font-family: "Kurale", serif;
     font-size: calc(1rem + 0.2vmin);
     text-decoration: none;
-    color: var(--silver);
+    color: var(--white);
     transition: ease 0.4s all;
-    display: flex;
     border: none;
     outline: none;
     background-color: inherit;
     align-items: center;
 }
 
+.collect svg {
+    fill: var(--white);
+    transition: ease 0.4s all;
+    padding-left: 2px;
+    padding-top: 2px;
+}
+
 .collect:hover {
-    color: var(--orange);
+    color: var(--primary);
+}
+
+.collect:hover svg {
+    fill: var(--primary);
 }
 
 .dropdown-content {
+    margin-top: 10px;
     border-radius: 20px;
     display: none;
     position: absolute;
@@ -457,7 +505,7 @@ header {
 
 .dropdown-content a {
     float: none;
-    color: var(--silver);
+    color: var(--white);
     padding: 12px 16px;
     text-decoration: none;
     font-weight: normal;
@@ -466,15 +514,16 @@ header {
 }
 
 .dropdown-content a:hover {
-    color: var(--orange);
+    color: var(--primary);
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-@media only screen and (max-width: 600px){
-    .menu__link {
+@media only screen and (max-width: 600px) {
+    .menu__link,
+    .dropdown .collect {
         font-size: calc(2px + 0.3rem + 1.5vmin);
     }
     .CTAPC {
@@ -497,27 +546,33 @@ header {
 }
 
 .heroHeader {
-    font-size: calc(2em + 6vmin);
-    font-family: 'Rosario', sans-serif;
-    color: var(--orange);
+    width: 60%;
+    max-width: 650px;
+    max-height: 250px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.heroHighlight {
+    color: var(--primary);
+}
+
 .heroImage {
     display: inline-block;
-	width: calc(1em + 8vmin);
+    width: calc(1em + 8vmin);
     height: calc(1em + 8vmin);
 }
 
 .heroTextContainer {
-    margin: 3vmin 2vmin 0px;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .heroTextContainer span {
     font-size: calc(0.5em + 2vmin);
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 .heroCTAContainer {
@@ -532,32 +587,32 @@ header {
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    border: solid 2px var(--orange);
+    border: solid 2px var(--primary);
     font-weight: normal;
     font-size: 1.2rem;
-    font-family: 'Kurale', serif;
+    font-family: "Kurale", serif;
     align-self: center;
     text-decoration: none;
     padding: 10px;
-    color: var(--silver);
+    color: var(--white);
     transition: ease 0.4s all;
 }
 
 .heroCTAMain {
-    background-color: var(--orange);
+    background-color: var(--primary);
     color: var(--BBlack);
     margin-left: 1vw;
 }
 
 .heroCTAMain:hover {
-    color: var(--orange);
+    color: var(--primary);
     background-color: var(--BBlack);
     border: solid 2px var(--BBlack);
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     .heroHeader {
-        font-size: calc(1em + 6vmin);
+        width: 95%;
     }
     .heroTextContainer {
         margin-top: 10vmin;
@@ -578,14 +633,14 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: 'Kurale', serif;
+    font-family: "Kurale", serif;
     background-color: var(--gold);
     overflow: hidden;
 }
 
 .preFooter span {
     font-size: 1.5rem;
-    font-family: 'Rosario', sans-serif;
+    font-family: "Rosario", sans-serif;
     display: flex;
     align-items: center;
     color: var(--BBlack);
@@ -594,8 +649,9 @@ header {
 
 .preFooter span::selection {
     background: var(--MBlack);
-    color: var(--gold);
+    color: var(--primary);
 }
+
 .CTAContainer {
     display: flex;
     justify-content: center;
@@ -605,7 +661,6 @@ header {
     width: 200px;
     height: 50px;
 }
-
 
 .preFooter .CTA {
     align-self: center;
@@ -624,65 +679,60 @@ footer {
     overflow: hidden;
     width: 100%;
     position: absolute;
-    flex-direction: column;
-    display: flex;
     background: var(--BBlack);
 }
 
-.footerHeader {
-    padding: 2em;
-    padding-bottom: 1em;
-    padding-top: 1vw;
-    display: inline-flex;
-    align-items: center;
+.footerContent {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
 }
 
 .footerLogo {
-    margin-left: 5px;
-	width: calc(1rem + 8vmin);
-    height: calc(1rem + 8vmin);
-}
-
-.footerH1 {
-    font-weight: bold;
-    font-size: 2.5em;
-    color: var(--silver);
-    font-family: 'Rosario', sans-serif;
+    align-self: center;
+    width: 40%;
+    max-width: 450px;
+    max-height: 200px;
 }
 
 .footerContainer {
+    width: 100%;
     padding: 2em;
     padding-top: 1em;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footerText {
     font-size: 20px;
-    color: var(--silver);
-    font-family: 'Alef', sans-serif;
+    color: var(--white);
+    font-family: "Alef", sans-serif;
 }
 
 .footerTitle {
     font-size: 25px;
-    color: var(--silver);
-    font-family: 'Rosario', sans-serif;
+    color: var(--primary);
+    font-family: "Rosario", sans-serif;
 }
 
 .footerContainer a {
     font-weight: normal;
-    color: var(--gold);
     transition: ease 0.4s all;
     text-decoration: none;
 }
-  
+
 .footerContainer a:hover {
-    color: var(--white);
+    text-decoration: underline;
 }
+
 .footerElement p {
-margin-block: 10px;
+    margin-block: 10px;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     .preFooter span {
         margin-left: 5px;
         font-size: 5vmin;
@@ -698,12 +748,13 @@ margin-block: 10px;
         width: calc(3em + 20vmin);
     }
     .footerContainer {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-    .footerH1 {
-        font-size: 2em;
+    .footerLogo {
+        padding: 10px;
+        width: max-content;
     }
     .footerText p {
         line-height: 0.8;
-      }
+    }
 }

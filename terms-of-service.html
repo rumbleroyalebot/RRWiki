@@ -1,117 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Rumble Royale - Hunger games battle simulator for Discord</title>
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alef&family=Kurale&family=Roboto+Mono:wght@500&family=Rosario:wght@700&display=swap"
+            rel="stylesheet" />
+        <link rel="icon" href="pics/logo.svg" type="image/webp" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TPQDZ3VD43"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-TPQDZ3VD43");
+        </script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rumble Royale - Hunger games battle simulator for Discord</title>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alef&family=Kurale&family=Roboto+Mono:wght@500&family=Rosario:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="pics/logo.svg" type="image/webp">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TPQDZ3VD43"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-TPQDZ3VD43');
-</script>
-</head>
-
-<body>
-    <header>
-        <div class="headerStart">
-            <a href="index.html" class="menu__link" title="Home"><img src="pics/logo.svg" alt="RR Logo" class="logo" /></a>
-        </div>
-    <!-- dropdown menu -->
-    <div class="dropdown menu__link">
-        <button class="collect">Collectibles<ion-icon name="chevron-down-outline"></ion-icon>
-        </button>
-        <div class="dropdown-content">
-            <a href="collectibles/eras.html" class="drop-item">Eras</a>
-            <a href="collectibles/skins.html" class="drop-item">Skins</a>
-            <a href="collectibles/phrases.html" class="drop-item">Phrases</a>
-            <a href="collectibles/banners.html" class="drop-item">Banners</a>
-            <a href="collectibles/titles.html" class="drop-item">Titles</a>
-        </div>
-    </div>
-    <a href="FAQs.html" class="menu__link">FAQs</a>
-    <a href="leaderboard.html" class="menu__link">Leaderboard</a>
-    <div class="headerEnd">
-        <a href="https://discord.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot%20applications.commands" target="_blank" class="menu__link" id="CTA">
-            <span class="CTAPC">Invite to your server</span>
-            <span class="CTAPhone">Invite!</span>
-        </a>
-    </div>
-</header>
-    
-<main>
-    <!-- MAIN CONTENT -->
-<section>
-        <div class="landing__container">
-            <h1>Terms and conditions</h1>
-
-        <p>These terms and conditions (“Agreement”) set forth the general terms and conditions of your use of the <a target="_blank" href="https://rumbleroyale.net">rumbleroyale.net</a> website (“Website” or “Service”) and any of its related products and services (collectively, “Services”). This Agreement is legally binding between you (“User”, “you” or “your”) and this Website operator (“Operator”, “we”, “us” or “our”). If you are entering into this agreement on behalf of a business or other legal entity, you represent that you have the authority to bind such entity to this agreement, in which case the terms “User”, “you” or “your” shall refer to such entity. If you do not have such authority, or if you do not agree with the terms of this agreement, you must not accept this agreement and may not access and use the Website and Services. By accessing and using the Website and Services, you acknowledge that you have read, understood, and agree to be bound by the terms of this Agreement. You acknowledge that this Agreement is a contract between you and the Operator, even though it is electronic and is not physically signed by you, and it governs your use of the Website and Services.</p>
-
-        <p>Although the Website and Services may link to other resources (such as websites, mobile applications, etc.), we are not, directly or indirectly, implying any approval, association, sponsorship, endorsement, or affiliation with any linked resource, unless specifically stated herein. We are not responsible for examining or evaluating, and we do not warrant the offerings of, any businesses or individuals or the content of their resources. We do not assume any responsibility or liability for the actions, products, services, and content of any other third parties. You should carefully review the legal statements and other conditions of use of any resource which you access through a link on the Website. Your linking to any other off-site resources is at your own risk.</p>
-        <h2>Changes and amendments</h2>
-        <p>We reserve the right to modify this Agreement or its terms related to the Website and Services at any time at our discretion. When we do, we will revise the updated date at the bottom of this page, post a notification on the main page of the Website. We may also provide notice to you in other ways at our discretion, such as through the contact information you have provided.</p>
-        <p>An updated version of this Agreement will be effective immediately upon the posting of the revised Agreement unless otherwise specified. Your continued use of the Website and Services after the effective date of the revised Agreement (or such other act specified at that time) will constitute your consent to those changes.</p>
-        <h2>Acceptance of these terms</h2>
-        <p>You acknowledge that you have read this Agreement and agree to all its terms and conditions. By accessing and using the Website and Services you agree to be bound by this Agreement. If you do not agree to abide by the terms of this Agreement, you are not authorized to access or use the Website and Services. This terms and conditions policy was created with the help of <a target="_blank" href="https://www.websitepolicies.com">WebsitePolicies</a>.</p>
-        <h2>Contacting us</h2>
-        <p>If you have any questions, concerns, or complaints regarding this Agreement, we encourage you to contact us on the page below:</p>
-        <p><a target="_blank" href="contact-us.html">Contact Us</a></p>
-
-
-    </section>
-</main>
-
-<!-- CONTENT END -->
-
-<button onclick="toTop()" id="top" title="Back to top"><ion-icon name="chevron-up-sharp"></ion-icon></button>
-
-    <footer>
-        <div class="preFooter">
-            <img draggable="false" src="pics/layer0.svg" class="layer" />
-            <div>
-                <span>Ready to rumble?
-                <div class="CTAContainer">
-                    <a href="https://discord.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot%20applications.commands" target="_blank" class="CTA">Invite to your server!</a>
+    <body>
+        <header>
+            <div class="headerStart">
+                <a href="index.html" class="menu__link" title="Home"
+                    ><img src="pics/logo.svg" alt="RR Logo" class="logo"
+                /></a>
+            </div>
+            <!-- dropdown menu -->
+            <div class="dropdown menu__link">
+                <button class="collect">
+                    Collectibles
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                        <path
+                            d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <a href="collectibles/eras.html" class="drop-item">Eras</a>
+                    <a href="collectibles/skins.html" class="drop-item">Skins</a>
+                    <a href="collectibles/phrases.html" class="drop-item">Phrases</a>
+                    <a href="collectibles/banners.html" class="drop-item">Banners</a>
+                    <a href="collectibles/titles.html" class="drop-item">Titles</a>
                 </div>
-            </span>
             </div>
-            <img draggable="false" src="pics/layer1.svg" class="layer" />
+            <a href="FAQs.html" class="menu__link">FAQs</a>
+            <a href="leaderboard.html" class="menu__link">Leaderboard</a>
+            <div class="headerEnd">
+                <a
+                    href="https://discord.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot%20applications.commands"
+                    target="_blank"
+                    class="menu__link"
+                    id="CTA">
+                    <span class="CTAPC">Invite to your server</span>
+                    <span class="CTAPhone">Invite!</span>
+                </a>
             </div>
-            <div class="footerHeader">
-                <span class="footerH1">Rumble Royale</span>
-                <img src="pics/win.webp" draggable="false" alt="RR Logo" class="footerLogo"></img>
+        </header>
+
+        <main>
+            <!-- MAIN CONTENT -->
+            <section>
+                <div class="landing__container">
+                    <h1>Terms and conditions</h1>
+
+                    <p>
+                        These terms and conditions (“Agreement”) set forth the general terms and conditions of your use
+                        of the <a target="_blank" href="https://rumbleroyale.net">rumbleroyale.net</a> website
+                        (“Website” or “Service”) and any of its related products and services (collectively,
+                        “Services”). This Agreement is legally binding between you (“User”, “you” or “your”) and this
+                        Website operator (“Operator”, “we”, “us” or “our”). If you are entering into this agreement on
+                        behalf of a business or other legal entity, you represent that you have the authority to bind
+                        such entity to this agreement, in which case the terms “User”, “you” or “your” shall refer to
+                        such entity. If you do not have such authority, or if you do not agree with the terms of this
+                        agreement, you must not accept this agreement and may not access and use the Website and
+                        Services. By accessing and using the Website and Services, you acknowledge that you have read,
+                        understood, and agree to be bound by the terms of this Agreement. You acknowledge that this
+                        Agreement is a contract between you and the Operator, even though it is electronic and is not
+                        physically signed by you, and it governs your use of the Website and Services.
+                    </p>
+
+                    <p>
+                        Although the Website and Services may link to other resources (such as websites, mobile
+                        applications, etc.), we are not, directly or indirectly, implying any approval, association,
+                        sponsorship, endorsement, or affiliation with any linked resource, unless specifically stated
+                        herein. We are not responsible for examining or evaluating, and we do not warrant the offerings
+                        of, any businesses or individuals or the content of their resources. We do not assume any
+                        responsibility or liability for the actions, products, services, and content of any other third
+                        parties. You should carefully review the legal statements and other conditions of use of any
+                        resource which you access through a link on the Website. Your linking to any other off-site
+                        resources is at your own risk.
+                    </p>
+                    <h2>Changes and amendments</h2>
+                    <p>
+                        We reserve the right to modify this Agreement or its terms related to the Website and Services
+                        at any time at our discretion. When we do, we will revise the updated date at the bottom of this
+                        page, post a notification on the main page of the Website. We may also provide notice to you in
+                        other ways at our discretion, such as through the contact information you have provided.
+                    </p>
+                    <p>
+                        An updated version of this Agreement will be effective immediately upon the posting of the
+                        revised Agreement unless otherwise specified. Your continued use of the Website and Services
+                        after the effective date of the revised Agreement (or such other act specified at that time)
+                        will constitute your consent to those changes.
+                    </p>
+                    <h2>Acceptance of these terms</h2>
+                    <p>
+                        You acknowledge that you have read this Agreement and agree to all its terms and conditions. By
+                        accessing and using the Website and Services you agree to be bound by this Agreement. If you do
+                        not agree to abide by the terms of this Agreement, you are not authorized to access or use the
+                        Website and Services. This terms and conditions policy was created with the help of
+                        <a target="_blank" href="https://www.websitepolicies.com">WebsitePolicies</a>.
+                    </p>
+                    <h2>Contacting us</h2>
+                    <p>
+                        If you have any questions, concerns, or complaints regarding this Agreement, we encourage you to
+                        contact us on the page below:
+                    </p>
+                    <p><a target="_blank" href="contact-us.html">Contact Us</a></p>
+                </div>
+            </section>
+        </main>
+
+        <!-- CONTENT END -->
+        <footer>
+            <div class="preFooter">
+                <img draggable="false" src="pics/layer0.svg" class="layer" />
+                <div>
+                    <span
+                        >Ready to rumble?
+                        <div class="CTAContainer">
+                            <a
+                                href="https://discord.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot%20applications.commands"
+                                target="_blank"
+                                class="CTA"
+                                >Invite to your server!</a
+                            >
+                        </div>
+                    </span>
+                </div>
+                <img draggable="false" src="pics/layer1.svg" class="layer" />
             </div>
+            <div class="footerContent">
+                <img src="pics/WebLogo.svg" draggable="false" alt="RR Logo" class="footerLogo" />
                 <div class="footerContainer">
-                    
                     <div class="footerElement">
                         <p class="footerTitle">Connect</p>
-                        <p class="footerText"><a href="https://discord.gg/XfbmXU2WY8" target="_blank"><ion-icon name="logo-discord"></ion-icon> Join our server</a></p>
-                        <p class="footerText"><a href="https://twitter.com/RumbleRoyaleGG" target="_blank"><ion-icon name="logo-twitter"></ion-icon> Follow us on Twitter</a></p>
-                        <p class="footerText"><a href="https://top.gg/bot/693167035068317736/vote" target="_blank"><ion-icon name="arrow-up-circle-sharp"></ion-icon> Vote for us on top.gg</a></p>
+                        <p class="footerText">
+                            <a href="https://discord.gg/XfbmXU2WY8" target="_blank">Discord</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="https://twitter.com/RumbleRoyaleGG" target="_blank">Twitter</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="https://top.gg/bot/693167035068317736/vote" target="_blank">Top.gg</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="contact-us.html">Contact us</a>
+                        </p>
+                    </div>
+
+                    <div class="footerElement">
+                        <p class="footerTitle">Wiki</p>
+                        <p class="footerText">
+                            <a href="collectibles/eras.html" target="_blank">Eras</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="collectibles/skins.html" target="_blank">Skins</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="collectibles/phrases.html" target="_blank">Phrases</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="collectibles/banners.html">Banners</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="collectibles/titles.html">Titles</a>
+                        </p>
                     </div>
 
                     <div class="footerElement">
                         <p class="footerTitle">Information</p>
-                        <p class="footerText"><a href="team.html">The RR team</a></p>
-                        <p class="footerText"><a href="terms-of-service.html">Terms of Service</a></p>
-                        <p class="footerText"><a href="privacy-policy.html">Privacy Policy</a></p>
-                        <p class="footerText"><a href="contact-us.html">Contact us</a></p>
+                        <p class="footerText">
+                            <a href="team.html">The RR team</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="terms-of-service.html">Terms of Service</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                        </p>
                     </div>
                 </div>
-    </footer>
+            </div>
+        </footer>
 
-<script src="js/app.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+        <button onclick="toTop()" id="top" title="Back to top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                    d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+            </svg>
+        </button>
+
+        <script src="js/app.js"></script>
+    </body>
 </html>

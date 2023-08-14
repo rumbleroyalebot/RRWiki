@@ -1,68 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Rumble Royale</title>
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alef&family=Kurale&family=Roboto+Mono:wght@500&family=Rosario:wght@700&display=swap"
+            rel="stylesheet" />
+        <link rel="icon" href="pics/logo.svg" type="image/icon type" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TPQDZ3VD43"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-TPQDZ3VD43");
+        </script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rumble Royale</title>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alef&family=Kurale&family=Roboto+Mono:wght@500&family=Rosario:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="pics/logo.svg" type="image/icon type">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TPQDZ3VD43"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <body>
+        <header>
+            <div class="headerStart">
+                <a href="index.html" class="menu__link" title="Home"
+                    ><img src="pics/logo.svg" alt="RR Logo" class="logo"
+                /></a>
+            </div>
+            <!-- dropdown menu -->
+            <div class="dropdown menu__link">
+                <button class="collect">
+                    Collectibles
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                        <path
+                            d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <a href="collectibles/eras.html" class="drop-item">Eras</a>
+                    <a href="collectibles/skins.html" class="drop-item">Skins</a>
+                    <a href="collectibles/phrases.html" class="drop-item">Phrases</a>
+                    <a href="collectibles/banners.html" class="drop-item">Banners</a>
+                    <a href="collectibles/titles.html" class="drop-item">Titles</a>
+                </div>
+            </div>
+            <a href="FAQs.html" class="menu__link">FAQs</a>
+            <a href="leaderboard.html" class="menu__link">Leaderboard</a>
+            <div class="headerEnd">
+                <a
+                    href="https://discord.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot%20applications.commands"
+                    target="_blank"
+                    class="menu__link"
+                    id="CTA">
+                    <span class="CTAPC">Invite to your server</span>
+                    <span class="CTAPhone">Invite!</span>
+                </a>
+            </div>
+        </header>
 
-  gtag('config', 'G-TPQDZ3VD43');
-</script>
-</head>
+        <main>
+            <!-- MAIN CONTENT -->
 
-<body>
-    <header>
-        <div class="headerStart">
-            <a href="index.html" class="menu__link" title="Home"><img src="pics/logo.svg" alt="RR Logo" class="logo" /></a>
-        </div>
-    <!-- dropdown menu -->
-    <div class="dropdown menu__link">
-        <button class="collect">Collectibles<ion-icon name="chevron-down-outline"></ion-icon>
-        </button>
-        <div class="dropdown-content">
-            <a href="collectibles/eras.html" class="drop-item">Eras</a>
-            <a href="collectibles/skins.html" class="drop-item">Skins</a>
-            <a href="collectibles/phrases.html" class="drop-item">Phrases</a>
-            <a href="collectibles/banners.html" class="drop-item">Banners</a>
-            <a href="collectibles/titles.html" class="drop-item">Titles</a>
-        </div>
-    </div>
-    <a href="FAQs.html" class="menu__link">FAQs</a>
-    <a href="leaderboard.html" class="menu__link">Leaderboard</a>
-    <div class="headerEnd">
-        <a href="https://discord.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot%20applications.commands" target="_blank" class="menu__link" id="CTA">
-            <span class="CTAPC">Invite to your server</span>
-            <span class="CTAPhone">Invite!</span>
-        </a>
-    </div>
-</header>
-
-    <main>
-        <!-- MAIN CONTENT -->
-
-        <section>
-            <div class="landing__container">
-                <h1>Meet our team:</h1>
+            <section>
+                <div class="landing__container">
+                    <h1>Meet our team:</h1>
 
                     <h2>Bot Development Department:</h2>
                     <div class="cardContainer">
-
                         <!-- NIELS 1/2-->
                         <div class="cardBody">
                             <div class="ImgContainer">
-                                <img class="cardImage" src="https://images.discordapp.net/avatars/306809153748467722/17c21c9809261c4ef610eff16ca5a798.png?size=512" alt="Card image">
+                                <img
+                                    class="cardImage"
+                                    src="https://images.discordapp.net/avatars/306809153748467722/17c21c9809261c4ef610eff16ca5a798.png?size=512"
+                                    alt="Card image" />
                                 <div class="HeadBadge">Dept Head</div>
                             </div>
                             <div class="cardInfo">
@@ -70,355 +85,445 @@
                                     <p class="cardName">Niels</p>
                                     <div class="HeadBadge">Dept Head</div>
                                 </div>
-                                <span class="cardText">Bot Visionaire | Entrepreneur | Python Developer | Sneakerhead</span>
+                                <span class="cardText"
+                                    >Bot Visionaire | Entrepreneur | Python Developer | Sneakerhead</span
+                                >
                                 <div class="cardSocials">
-                                    <a href="https://twitter.com/nielsvv08" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-                                    <a href="https://www.instagram.com/nielsvv08/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                                    <a href="https://twitter.com/nielsvv08" target="_blank"
+                                        ><ion-icon name="logo-twitter"></ion-icon
+                                    ></a>
+                                    <a href="https://www.instagram.com/nielsvv08/" target="_blank"
+                                        ><ion-icon name="logo-instagram"></ion-icon
+                                    ></a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Wispy 2/2-->
                         <div class="cardBody">
-                            <img class="cardImage" src="https://media.discordapp.net/attachments/405159360222986253/974144468343210034/Screen_Shot_2022-02-16_at_10.36.04_PM.png?width=473&height=473" alt="Card image">
+                            <img
+                                class="cardImage"
+                                src="https://media.discordapp.net/attachments/405159360222986253/974144468343210034/Screen_Shot_2022-02-16_at_10.36.04_PM.png?width=473&height=473"
+                                alt="Card image" />
                             <div class="cardInfo">
                                 <p class="cardName">Wispy</p>
                                 <span class="cardText">Python Developer | Loves ducks</span>
                                 <div class="cardSocials">
-                                    <a href="https://github.com/murillotadeo" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                                    <a href="https://github.com/murillotadeo" target="_blank"
+                                        ><ion-icon name="logo-github"></ion-icon
+                                    ></a>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="cardContainer">
-
                         <!-- BLOODWING 1/2-->
-                          <div class="cardBody">
-                              <img class="cardImage" src="pics/logo.svg" alt="Card image">
-                              <div class="cardInfo">
-                                  <p class="cardName">BLOODWING</p>
-                                  <span class="cardText">Bot Developer</span>
-                                  <div class="cardSocials">
-                                  </div>
-                              </div>
-                          </div>
+                        <div class="cardBody">
+                            <img class="cardImage" src="pics/logo.svg" alt="Card image" />
+                            <div class="cardInfo">
+                                <p class="cardName">BLOODWING</p>
+                                <span class="cardText">Bot Developer</span>
+                                <div class="cardSocials"></div>
+                            </div>
+                        </div>
 
                         <!-- milan 2/2-->
                         <div class="cardBody">
-                            <img class="cardImage" src="https://media.discordapp.net/attachments/643421359984345088/969471821806178334/1651210443664.jpg?width=473&height=473" alt="Card image">
+                            <img
+                                class="cardImage"
+                                src="https://media.discordapp.net/attachments/643421359984345088/969471821806178334/1651210443664.jpg?width=473&height=473"
+                                alt="Card image" />
                             <div class="cardInfo">
                                 <p class="cardName">milan_25</p>
                                 <span class="cardText">CS student |📘 fantasy books 🎥 movies 👨‍💻</span>
                                 <div class="cardSocials">
-                                    <a href="https://twitter.com/milan_25_" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                                    <a href="https://twitter.com/milan_25_" target="_blank"
+                                        ><ion-icon name="logo-twitter"></ion-icon
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardContainer">
+                        <!-- ghostrider 1/2-->
+                        <div class="cardBody ContainerEnd">
+                            <img class="cardImage" src="pics/logo.svg" alt="Card image" />
+                            <div class="cardInfo">
+                                <p class="cardName">ghostrider</p>
+                                <span class="cardText">Bot Developer</span>
+                                <div class="cardSocials"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Web Development Department</h2>
+
+                    <div class="cardContainer">
+                        <!-- MOKHALED 1/2-->
+                        <div class="cardBody">
+                            <div class="ImgContainer">
+                                <img
+                                    class="cardImage"
+                                    src="https://media.discordapp.net/attachments/536988365782777858/969438450807865364/unknown.jpeg?width=473&height=473"
+                                    alt="Card image" />
+                                <div class="HeadBadge">Dept Head</div>
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardHeader">
+                                    <p class="cardName">MoKhaled</p>
+                                    <div class="HeadBadge">Dept Head</div>
+                                </div>
+                                <span class="cardText">Freelancer | I love playing sports in my free time</span>
+                                <div class="cardSocials">
+                                    <a href="https://twitter.com/_MoKhaled_" target="_blank"
+                                        ><ion-icon name="logo-twitter"></ion-icon
+                                    ></a>
+                                    <a href="https://www.linkedin.com/in/mokhaled112" target="_blank"
+                                        ><ion-icon name="logo-linkedin"></ion-icon
+                                    ></a>
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Bob 2/2-->
+                        <div class="cardBody">
+                            <img
+                                class="cardImage"
+                                src="https://media.discordapp.net/attachments/683819168709214361/967137128649732256/Geto.jpg?width=473&height=473"
+                                alt="Card image" />
+                            <div class="cardInfo">
+                                <p class="cardName">I'MBoBx</p>
+                                <span class="cardText">Professional dumbass | Weeb | No my name is not box</span>
+                                <div class="cardSocials">
+                                    <a href="https://twitter.com/imbobx" target="_blank"
+                                        ><ion-icon name="logo-twitter"></ion-icon
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="cardContainer">
-
-                        <!-- ghostrider 1/2-->
-                          <div class="cardBody ContainerEnd">
-                              <img class="cardImage" src="pics/logo.svg" alt="Card image">
-                              <div class="cardInfo">
-                                  <p class="cardName">ghostrider</p>
-                                  <span class="cardText">Bot Developer</span>
-                                  <div class="cardSocials">
-                                  </div>
-                              </div>
-                          </div>
-
-
-
-                        </div>
-
-        <h2>Web Development Department</h2>
-
-        <div class="cardContainer">
-        <!-- MOKHALED 1/2-->
-        <div class="cardBody">
-            <div class="ImgContainer">
-                <img class="cardImage" src="https://media.discordapp.net/attachments/536988365782777858/969438450807865364/unknown.jpeg?width=473&height=473" alt="Card image">
-                <div class="HeadBadge">Dept Head</div>
-            </div>
-            <div class="cardInfo">
-                <div class="cardHeader">
-                    <p class="cardName">MoKhaled</p>
-                    <div class="HeadBadge">Dept Head</div>
-                </div>
-                <span class="cardText">Freelancer | I love playing sports in my free time</span>
-                <div class="cardSocials">
-                    <a href="https://twitter.com/_MoKhaled_" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="https://www.linkedin.com/in/mokhaled112" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Bob 2/2-->
-        <div class="cardBody">
-            <img class="cardImage" src="https://media.discordapp.net/attachments/683819168709214361/967137128649732256/Geto.jpg?width=473&height=473" alt="Card image">
-            <div class="cardInfo">
-                <p class="cardName">I'MBoBx</p>
-                <span class="cardText">Professional dumbass | Weeb | No my name is not box</span>
-                <div class="cardSocials">
-                    <a href="https://twitter.com/imbobx" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="cardContainer">
-
-
-        <!-- Spook 1/2-->
-        <div class="cardBody ContainerEnd">
-            <img class="cardImage" src="https://media.discordapp.net/attachments/723017844870086806/967676523127652362/untitled.png?width=473&height=473" alt="Card image">
-            <div class="cardInfo">
-                <p class="cardName">Spook</p>
-                <span class="cardText">Student | Curious every day</span>
-            </div>
-        </div>
-
-    </div>
-
-        <h2>Graphics Department</h2>
-        <div class="cardContainer">
-
-        <!-- Vampii 1/2-->
-        <div class="cardBody">
-            <div class="ImgContainer">
-                <img class="cardImage" src="https://media.discordapp.net/attachments/966751290417885224/966790727109582858/Final.jpg?width=473&height=473" alt="Card image">
-                <div class="HeadBadge">Dept Head</div>
-            </div>
-            <div class="cardInfo">
-                <div class="cardHeader">
-                    <p class="cardName">Vampii</p>
-                    <div class="HeadBadge">Dept Head</div>
-                </div>
-                <span class="cardText">Photographer | Beatboxer | Beer Enthusiast 🍻</span>
-                <div class="cardSocials">
-                    <a href="https://www.instagram.com/tadeas_uhrin" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href="https://t.me/Vampiirek" target="_blank"><ion-icon name="paper-plane-outline"></ion-icon></a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- AppleJuice127 2/2-->
-        <div class="cardBody">
-            <img class="cardImage" src="https://media.discordapp.net/attachments/966751290417885224/966991019390410792/ceff3142-cecc-443b-a567-f334feb0a1e4.png?width=473&height=473" alt="Card image">
-            <div class="cardInfo">
-                <p class="cardName">AppleJuice127</p>
-                <span class="cardText">Artist | Moderator | i like applejuice</span>
-                <div class="cardSocials">
-                    <a href="https://twitter.com/AppleTheDuck" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="https://www.instagram.com/applejuice127" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-
-
-    <div class="cardContainer">
-            <!-- ChiiQ 1/2-->
-            <div class="cardBody ContainerEnd">
-                <img class="cardImage" src="https://media.discordapp.net/attachments/966751290417885224/967741747964837940/bmrKVJPC_400x400.jpg" alt="Card image">
-                <div class="cardInfo">
-                    <p class="cardName">ChiiQ</p>
-                    <span class="cardText">Gamer | Dark is the color of my humor</span>
-                    <div class="cardSocials">
-                        <a href="https://twitter.com/chiiQ4" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="mailto:chii.Quinto@gmail.com" target="_self"><ion-icon name="logo-google"></ion-icon></a>
-                    </div>
-                </div>
-            </div>
-    </div>
-
-
-        <h2>Writing Department</h2>
-        <div class="cardContainer">
-
-            <!-- Bishop 1/2-->
-            <div class="cardBody">
-                <div class="ImgContainer">
-                    <img class="cardImage" src="pics//logo.svg" alt="Card image">
-                    <div class="HeadBadge">Dept Head</div>
-                </div>
-                <div class="cardInfo">
-                    <div class="cardHeader">
-                        <p class="cardName">Bishop</p>
-                        <div class="HeadBadge">Dept Head</div>
-                    </div>
-                    <span class="cardText">Writer</span>
-                    <div class="cardSocials">
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Epic Saviour 2/2-->
-            <div class="cardBody">
-                <img class="cardImage" src="https://media.discordapp.net/attachments/966789401365590137/966789427089248327/unknown.png" alt="Card image">
-                <div class="cardInfo">
-                    <p class="cardName">Epic Saviour</p>
-                    <span class="cardText">Teacher | Wanderer | UK 🇬🇧</span>
-                    <div class="cardSocials">
-                        <a href="https://twitter.com/EpicSaviour" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="cardContainer">
-
-        <!-- Matthew081302 1/2-->
-
-        <div class="cardBody ContainerEnd">
-            <img class="cardImage" src="pics/logo.svg" alt="Card image">
-            <div class="cardInfo">
-                <p class="cardName">Matthew081302</p>
-                <span class="cardText">Writer</span>
-                <div class="cardSocials">
-                </div>
-            </div>
-        </div>
-
-
-
-        </div>
-        <h2>Moderation Department</h2>
-        <div class="cardContainer">  
-
-            <!-- Kathryn 1/2-->
-        <div class="cardBody">
-            <div class="ImgContainer">
-                <img class="cardImage" src="https://media.discordapp.net/attachments/966751290417885224/966762756407713893/6EA2DFCF-CA68-4FD1-BE0F-F31CB8B7D46D.jpg?width=473&height=473" alt="Card image">
-                <div class="HeadBadge">Dept Head</div>
-            </div>
-            <div class="cardInfo">
-                <div class="cardHeader">
-                    <p class="cardName">Ranch</p>
-                    <div class="HeadBadge">Dept Head</div>
-                </div>
-                <span class="cardText">I like creating art, watching all sorts of television shows, gaming, and taking care of my zoo of animals.</span>
-                <div class="cardSocials">
-                    <a href="https://twitter.com/katttthryn" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="https://www.twitch.tv/ranchdepressing" target="_blank"><ion-icon name="logo-twitch"></ion-icon></a>
-                </div>
-            </div>
-        </div>
-
-
-
-
-             <!-- Octo 2/2-->
-            <div class="cardBody">
-                <img class="cardImage" src="https://cdn.discordapp.com/attachments/966789401365590137/966806671504572466/FF24B509-6642-44BC-AE21-48F9488C6F36.jpg" alt="Card image">
-                <div class="cardInfo">
-                    <p class="cardName">octobinck</p>
-                    <span class="cardText">I like speedcubing, and enjoy being outside.</span>
-                    <div class="cardSocials">
-                        <a href="https://twitter.com/binck_hensen" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="mailto:Octobinck@gmail.com" target="_self"><ion-icon name="logo-google"></ion-icon></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-            <div class="cardContainer">
-
-                <!-- Brew 1/2-->
-                <div class="cardBody">
-                    <img class="cardImage" src="https://cdn.discordapp.com/attachments/980475183276118026/1108385876356120586/6d73a4e44cdd04ace1b0260f99f81400.jpg" alt="Card image">
-                    <div class="cardInfo">
-                        <p class="cardName">Brew</p>
-                        <span class="cardText">I work part-time, play stuff, research about controversial topics, and go to bed.</span>
-                        <div class="cardSocials">
-                            <a href="mailto:brewclifton@gmail.com" target="_self"><ion-icon name="logo-google"></ion-icon></a>
+                        <!-- Spook 1/2-->
+                        <div class="cardBody ContainerEnd">
+                            <img
+                                class="cardImage"
+                                src="https://media.discordapp.net/attachments/723017844870086806/967676523127652362/untitled.png?width=473&height=473"
+                                alt="Card image" />
+                            <div class="cardInfo">
+                                <p class="cardName">Spook</p>
+                                <span class="cardText">Student | Curious every day</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-            <!-- EB Elite 2/2-->
-            <div class="cardBody">
-                <img class="cardImage" src="https://media.discordapp.net/attachments/967837148378198076/967837293446565978/6964e800dfa95ed71d8ceee01638cb86.png" alt="Card image">
-                <div class="cardInfo">
-                    <p class="cardName">EB Elite</p>
-                    <span class="cardText">I have two dogs and enjoy brain games</span>
-                </div>
-            </div>
-        </div>
+                    <h2>Graphics Department</h2>
+                    <div class="cardContainer">
+                        <!-- Vampii 1/2-->
+                        <div class="cardBody">
+                            <div class="ImgContainer">
+                                <img
+                                    class="cardImage"
+                                    src="https://media.discordapp.net/attachments/966751290417885224/966790727109582858/Final.jpg?width=473&height=473"
+                                    alt="Card image" />
+                                <div class="HeadBadge">Dept Head</div>
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardHeader">
+                                    <p class="cardName">Vampii</p>
+                                    <div class="HeadBadge">Dept Head</div>
+                                </div>
+                                <span class="cardText">Photographer | Beatboxer | Beer Enthusiast 🍻</span>
+                                <div class="cardSocials">
+                                    <a href="https://www.instagram.com/tadeas_uhrin" target="_blank"
+                                        ><ion-icon name="logo-instagram"></ion-icon
+                                    ></a>
+                                    <a href="https://t.me/Vampiirek" target="_blank"
+                                        ><ion-icon name="paper-plane-outline"></ion-icon
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- AppleJuice127 2/2-->
+                        <div class="cardBody">
+                            <img
+                                class="cardImage"
+                                src="https://media.discordapp.net/attachments/966751290417885224/966991019390410792/ceff3142-cecc-443b-a567-f334feb0a1e4.png?width=473&height=473"
+                                alt="Card image" />
+                            <div class="cardInfo">
+                                <p class="cardName">AppleJuice127</p>
+                                <span class="cardText">Artist | Moderator | i like applejuice</span>
+                                <div class="cardSocials">
+                                    <a href="https://twitter.com/AppleTheDuck" target="_blank"
+                                        ><ion-icon name="logo-twitter"></ion-icon
+                                    ></a>
+                                    <a href="https://www.instagram.com/applejuice127" target="_blank"
+                                        ><ion-icon name="logo-instagram"></ion-icon
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="cardContainer">
+                    <div class="cardContainer">
+                        <!-- ChiiQ 1/2-->
+                        <div class="cardBody ContainerEnd">
+                            <img
+                                class="cardImage"
+                                src="https://media.discordapp.net/attachments/966751290417885224/967741747964837940/bmrKVJPC_400x400.jpg"
+                                alt="Card image" />
+                            <div class="cardInfo">
+                                <p class="cardName">ChiiQ</p>
+                                <span class="cardText">Gamer | Dark is the color of my humor</span>
+                                <div class="cardSocials">
+                                    <a href="https://twitter.com/chiiQ4" target="_blank"
+                                        ><ion-icon name="logo-twitter"></ion-icon
+                                    ></a>
+                                    <a href="mailto:chii.Quinto@gmail.com" target="_self"
+                                        ><ion-icon name="logo-google"></ion-icon
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <!-- Bench 1/2-->
-                <div class="cardBody ContainerEnd">
-                    <img class="cardImage" src="https://media.discordapp.net/attachments/966751290417885224/966860366833385562/FB_IMG_1650586075280.jpg?width=469&height=473" alt="Card image">
-                    <div class="cardInfo">
-                        <p class="cardName">Bench</p>
-                        <span class="cardText">YouTuber | Electrician | Junior Software Programmer</span>
-                        <div class="cardSocials">
-                            <a href="https://youtube.com/channel/UCQimtjZaytBrUs35dLm7JVw" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                    <h2>Writing Department</h2>
+                    <div class="cardContainer">
+                        <!-- Bishop 1/2-->
+                        <div class="cardBody">
+                            <div class="ImgContainer">
+                                <img class="cardImage" src="pics//logo.svg" alt="Card image" />
+                                <div class="HeadBadge">Dept Head</div>
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardHeader">
+                                    <p class="cardName">Bishop</p>
+                                    <div class="HeadBadge">Dept Head</div>
+                                </div>
+                                <span class="cardText">Writer</span>
+                                <div class="cardSocials"></div>
+                            </div>
+                        </div>
+
+                        <!-- Epic Saviour 2/2-->
+                        <div class="cardBody">
+                            <img
+                                class="cardImage"
+                                src="https://media.discordapp.net/attachments/966789401365590137/966789427089248327/unknown.png"
+                                alt="Card image" />
+                            <div class="cardInfo">
+                                <p class="cardName">Epic Saviour</p>
+                                <span class="cardText">Teacher | Wanderer | UK 🇬🇧</span>
+                                <div class="cardSocials">
+                                    <a href="https://twitter.com/EpicSaviour" target="_blank"
+                                        ><ion-icon name="logo-twitter"></ion-icon
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardContainer">
+                        <!-- Matthew081302 1/2-->
+
+                        <div class="cardBody ContainerEnd">
+                            <img class="cardImage" src="pics/logo.svg" alt="Card image" />
+                            <div class="cardInfo">
+                                <p class="cardName">Matthew081302</p>
+                                <span class="cardText">Writer</span>
+                                <div class="cardSocials"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Moderation Department</h2>
+                    <div class="cardContainer">
+                        <!-- Kathryn 1/2-->
+                        <div class="cardBody">
+                            <div class="ImgContainer">
+                                <img
+                                    class="cardImage"
+                                    src="https://media.discordapp.net/attachments/966751290417885224/966762756407713893/6EA2DFCF-CA68-4FD1-BE0F-F31CB8B7D46D.jpg?width=473&height=473"
+                                    alt="Card image" />
+                                <div class="HeadBadge">Dept Head</div>
+                            </div>
+                            <div class="cardInfo">
+                                <div class="cardHeader">
+                                    <p class="cardName">Ranch</p>
+                                    <div class="HeadBadge">Dept Head</div>
+                                </div>
+                                <span class="cardText"
+                                    >I like creating art, watching all sorts of television shows, gaming, and taking
+                                    care of my zoo of animals.</span
+                                >
+                                <div class="cardSocials">
+                                    <a href="https://twitter.com/katttthryn" target="_blank"
+                                        ><ion-icon name="logo-twitter"></ion-icon
+                                    ></a>
+                                    <a href="https://www.twitch.tv/ranchdepressing" target="_blank"
+                                        ><ion-icon name="logo-twitch"></ion-icon
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Octo 2/2-->
+                        <div class="cardBody">
+                            <img
+                                class="cardImage"
+                                src="https://cdn.discordapp.com/attachments/966789401365590137/966806671504572466/FF24B509-6642-44BC-AE21-48F9488C6F36.jpg"
+                                alt="Card image" />
+                            <div class="cardInfo">
+                                <p class="cardName">octobinck</p>
+                                <span class="cardText">I like speedcubing, and enjoy being outside.</span>
+                                <div class="cardSocials">
+                                    <a href="https://twitter.com/binck_hensen" target="_blank"
+                                        ><ion-icon name="logo-twitter"></ion-icon
+                                    ></a>
+                                    <a href="mailto:Octobinck@gmail.com" target="_self"
+                                        ><ion-icon name="logo-google"></ion-icon
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardContainer">
+                        <!-- Brew 1/2-->
+                        <div class="cardBody">
+                            <img
+                                class="cardImage"
+                                src="https://cdn.discordapp.com/attachments/980475183276118026/1108385876356120586/6d73a4e44cdd04ace1b0260f99f81400.jpg"
+                                alt="Card image" />
+                            <div class="cardInfo">
+                                <p class="cardName">Brew</p>
+                                <span class="cardText"
+                                    >I work part-time, play stuff, research about controversial topics, and go to
+                                    bed.</span
+                                >
+                                <div class="cardSocials">
+                                    <a href="mailto:brewclifton@gmail.com" target="_self"
+                                        ><ion-icon name="logo-google"></ion-icon
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- EB Elite 2/2-->
+                        <div class="cardBody">
+                            <img
+                                class="cardImage"
+                                src="https://media.discordapp.net/attachments/967837148378198076/967837293446565978/6964e800dfa95ed71d8ceee01638cb86.png"
+                                alt="Card image" />
+                            <div class="cardInfo">
+                                <p class="cardName">EB Elite</p>
+                                <span class="cardText">I have two dogs and enjoy brain games</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardContainer">
+                        <!-- Bench 1/2-->
+                        <div class="cardBody ContainerEnd">
+                            <img
+                                class="cardImage"
+                                src="https://media.discordapp.net/attachments/966751290417885224/966860366833385562/FB_IMG_1650586075280.jpg?width=469&height=473"
+                                alt="Card image" />
+                            <div class="cardInfo">
+                                <p class="cardName">Bench</p>
+                                <span class="cardText">YouTuber | Electrician | Junior Software Programmer</span>
+                                <div class="cardSocials">
+                                    <a href="https://youtube.com/channel/UCQimtjZaytBrUs35dLm7JVw" target="_blank"
+                                        ><ion-icon name="logo-youtube"></ion-icon
+                                    ></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-            </div>
-
-</div>
-</section>
-<!-- CONTENT END -->
-
-<button onclick="toTop()" id="top" title="Back to top"><ion-icon name="chevron-up-sharp"></ion-icon></button>
-
-    <footer>
-        <div class="preFooter">
-            <img draggable="false" src="pics/layer0.svg" class="layer" />
-            <div>
-                <span>Ready to rumble?
-                <div class="CTAContainer">
-                    <a href="https://discord.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot%20applications.commands" target="_blank" class="CTA">Invite to your server!</a>
+            </section>
+        </main>
+        <!-- CONTENT END -->
+        <footer>
+            <div class="preFooter">
+                <img draggable="false" src="pics/layer0.svg" class="layer" />
+                <div>
+                    <span
+                        >Ready to rumble?
+                        <div class="CTAContainer">
+                            <a
+                                href="https://discord.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot%20applications.commands"
+                                target="_blank"
+                                class="CTA"
+                                >Invite to your server!</a
+                            >
+                        </div>
+                    </span>
                 </div>
-            </span>
+                <img draggable="false" src="pics/layer1.svg" class="layer" />
             </div>
-            <img draggable="false" src="pics/layer1.svg" class="layer" />
-            </div>
-            <div class="footerHeader">
-                <span class="footerH1">Rumble Royale</span>
-                <img src="pics/win.webp" draggable="false" alt="RR Logo" class="footerLogo" />
-            </div>
+            <div class="footerContent">
+                <img src="pics/WebLogo.svg" draggable="false" alt="RR Logo" class="footerLogo" />
                 <div class="footerContainer">
-                    
                     <div class="footerElement">
                         <p class="footerTitle">Connect</p>
-                        <p class="footerText"><a href="https://discord.gg/XfbmXU2WY8" target="_blank"><ion-icon name="logo-discord"></ion-icon> Join our server</a></p>
-                        <p class="footerText"><a href="https://twitter.com/RumbleRoyaleGG" target="_blank"><ion-icon name="logo-twitter"></ion-icon> Follow us on Twitter</a></p>
-                        <p class="footerText"><a href="https://top.gg/bot/693167035068317736/vote" target="_blank"><ion-icon name="arrow-up-circle-sharp"></ion-icon> Vote for us on top.gg</a></p>
+                        <p class="footerText">
+                            <a href="https://discord.gg/XfbmXU2WY8" target="_blank">Discord</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="https://twitter.com/RumbleRoyaleGG" target="_blank">Twitter</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="https://top.gg/bot/693167035068317736/vote" target="_blank">Top.gg</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="contact-us.html">Contact us</a>
+                        </p>
+                    </div>
+
+                    <div class="footerElement">
+                        <p class="footerTitle">Wiki</p>
+                        <p class="footerText">
+                            <a href="collectibles/eras.html" target="_blank">Eras</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="collectibles/skins.html" target="_blank">Skins</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="collectibles/phrases.html" target="_blank">Phrases</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="collectibles/banners.html">Banners</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="collectibles/titles.html">Titles</a>
+                        </p>
                     </div>
 
                     <div class="footerElement">
                         <p class="footerTitle">Information</p>
-                        <p class="footerText"><a href="team.html">The RR team</a></p>
-                        <p class="footerText"><a href="terms-of-service.html">Terms of Service</a></p>
-                        <p class="footerText"><a href="privacy-policy.html">Privacy Policy</a></p>
-                        <p class="footerText"><a href="contact-us.html">Contact us</a></p>
+                        <p class="footerText">
+                            <a href="team.html">The RR team</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="terms-of-service.html">Terms of Service</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                        </p>
                     </div>
                 </div>
-    </footer>
+            </div>
+        </footer>
 
-<script src="js/app.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+        <button onclick="toTop()" id="top" title="Back to top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                    d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+            </svg>
+        </button>
+
+        <script src="js/app.js"></script>
+    </body>
 </html>

@@ -1,130 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Rumble Royale - Skins</title>
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet" />
+        <link href="collectibles.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alef&family=Kurale&family=Roboto+Mono:wght@500&family=Rosario:wght@700&display=swap"
+            rel="stylesheet" />
+        <link rel="icon" href="../pics/logo.svg" type="image/icon type" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TPQDZ3VD43"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-TPQDZ3VD43");
+        </script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rumble Royale - Skins</title>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
-    <link href="collectibles.css" rel="stylesheet">
-    <link href="../css/styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alef&family=Kurale&family=Roboto+Mono:wght@500&family=Rosario:wght@700&display=swap" rel="stylesheet">
-    <link rel="icon" href="../pics/logo.svg" type="image/icon type">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TPQDZ3VD43"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-TPQDZ3VD43');
-</script>
-</head>
-
-<body>
-    <header>
-        <div class="headerStart">
-            <a href="../index.html" class="menu__link" title="Home"><img src="../pics/logo.svg" alt="RR Logo" class="logo" /></a>
-        </div>
-    <!-- dropdown menu -->
-    <div class="dropdown menu__link">
-        <button id="current" class="collect">Collectibles<ion-icon name="chevron-down-outline"></ion-icon>
-        </button>
-        <div class="dropdown-content">
-            <a href="eras.html" class="drop-item">Eras</a>
-            <a href="skins.html" class="drop-item">Skins</a>
-            <a href="phrases.html" class="drop-item">Phrases</a>
-            <a href="banners.html" class="drop-item">Banners</a>
-            <a href="titles.html" class="drop-item">Titles</a>
-        </div>
-    </div>
-    <a href="../FAQs.html" class="menu__link">FAQs</a>
-    <a href="../leaderboard.html" class="menu__link">Leaderboard</a>
-    <div class="headerEnd">
-        <a href="https://discord.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot%20applications.commands" target="_blank" class="menu__link" id="CTA">
-            <span class="CTAPC">Invite to your server</span>
-            <span class="CTAPhone">Invite!</span>
-        </a>
-    </div>
-</header>
-    
-    <main>
-        <!-- MAIN CONTENT -->
-
-        <section>
-            <div class="landing__container">
-                <h1>Items:</h1>
-                <div class="content">
-                <h2><img src="../pics/classic.webp" class="eraLogo"></a>Classic Era:</h2>
-                <div id="classicSkins"></div>
-                <h2><img src="../pics/modern.webp" class="eraLogo"></a>Modern Era:</h2>
-                <div id="modernSkins"></div>
-                <h2><img src="../pics/futuristic.webp" class="eraLogo">Futuristic Era:</h2>
-                <div id="futuristicSkins"></div>
-                <h2><img src="../pics/medieval.webp" class="eraLogo"></a>Medieval Era:</h2>
-                <div id="medievalSkins"></div>
-                <h2><img src="../pics/pirate.webp" class="eraLogo"></a>Pirate Era:</h2>
-                <div id="pirateSkins"></div>
-                <h2><img src="../pics/samurai.webp" class="eraLogo"></a>Samurai Era:</h2>
-                <div id="samuraiSkins"></div>
-                <h2><img src="../pics/steampunk.webp" class="eraLogo"></a>Steampunk Era:</h2>
-                <div id="steampunkSkins"></div>
-                <h2><img src="../pics/zombie.webp" class="eraLogo"></a>Zombie Era:</h2>
-                <div id="zombieSkins"></div>
+    <body>
+        <header>
+            <div class="headerStart">
+                <a href="../index.html" class="menu__link" title="Home"
+                    ><img src="../pics/logo.svg" alt="RR Logo" class="logo"
+                /></a>
             </div>
-                <h1>Old Event Items:</h1>
-                <div class="content">
-                <div id="OldEventsitemList"></div>
-            </div>
-            </div>
-            </div>
-        </section>
-    </main>
-
-
-<!-- CONTENT END -->
-
-<button onclick="toTop()" id="top" title="Back to top"><ion-icon name="chevron-up-sharp"></ion-icon></button>
-
-    <footer>
-        <div class="preFooter">
-            <img draggable="false" src="../pics/layer0.svg" class="layer" />
-            <div>
-                <span>Ready to rumble?
-                <div class="CTAContainer">
-                    <a href="https://discord.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot%20applications.commands" target="_blank" class="CTA">Invite to your server!</a>
+            <!-- dropdown menu -->
+            <div class="dropdown menu__link">
+                <button id="current" class="collect">
+                    Collectibles
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                        <path
+                            d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <a href="eras.html" class="drop-item">Eras</a>
+                    <a href="skins.html" class="drop-item">Skins</a>
+                    <a href="phrases.html" class="drop-item">Phrases</a>
+                    <a href="banners.html" class="drop-item">Banners</a>
+                    <a href="titles.html" class="drop-item">Titles</a>
                 </div>
-            </span>
             </div>
-            <img draggable="false" src="../pics/layer1.svg" class="layer" />
+            <a href="../FAQs.html" class="menu__link">FAQs</a>
+            <a href="../leaderboard.html" class="menu__link">Leaderboard</a>
+            <div class="headerEnd">
+                <a
+                    href="https://discord.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot%20applications.commands"
+                    target="_blank"
+                    class="menu__link"
+                    id="CTA">
+                    <span class="CTAPC">Invite to your server</span>
+                    <span class="CTAPhone">Invite!</span>
+                </a>
             </div>
-            <div class="footerHeader">
-                <span class="footerH1">Rumble Royale</span>
-                <img src="../pics/win.webp" draggable="false" alt="RR Logo" class="footerLogo"></img>
+        </header>
+
+        <main>
+            <!-- MAIN CONTENT -->
+
+            <section>
+                <div class="landing__container">
+                    <h1>Items:</h1>
+                    <div class="content">
+                        <h2><img src="../pics/classic.webp" class="eraLogo" />Classic Era:</h2>
+                        <div id="classicSkins"></div>
+                        <h2><img src="../pics/modern.webp" class="eraLogo" />Modern Era:</h2>
+                        <div id="modernSkins"></div>
+                        <h2><img src="../pics/futuristic.webp" class="eraLogo" />Futuristic Era:</h2>
+                        <div id="futuristicSkins"></div>
+                        <h2><img src="../pics/medieval.webp" class="eraLogo" />Medieval Era:</h2>
+                        <div id="medievalSkins"></div>
+                        <h2><img src="../pics/pirate.webp" class="eraLogo" />Pirate Era:</h2>
+                        <div id="pirateSkins"></div>
+                        <h2><img src="../pics/samurai.webp" class="eraLogo" />Samurai Era:</h2>
+                        <div id="samuraiSkins"></div>
+                        <h2><img src="../pics/steampunk.webp" class="eraLogo" />Steampunk Era:</h2>
+                        <div id="steampunkSkins"></div>
+                        <h2><img src="../pics/zombie.webp" class="eraLogo" />Zombie Era:</h2>
+                        <div id="zombieSkins"></div>
+                    </div>
+                    <h1>Old Event Items:</h1>
+                    <div class="content">
+                        <div id="OldEventsitemList"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- CONTENT END -->
+        <footer>
+            <div class="preFooter">
+                <img draggable="false" src="../pics/layer0.svg" class="layer" />
+                <div>
+                    <span
+                        >Ready to rumble?
+                        <div class="CTAContainer">
+                            <a
+                                href="https://discord.com/api/oauth2/authorize?client_id=693167035068317736&permissions=523344&scope=bot%20applications.commands"
+                                target="_blank"
+                                class="CTA"
+                                >Invite to your server!</a
+                            >
+                        </div>
+                    </span>
+                </div>
+                <img draggable="false" src="../pics/layer1.svg" class="layer" />
             </div>
+            <div class="footerContent">
+                <img src="../pics/WebLogo.svg" draggable="false" alt="RR Logo" class="footerLogo" />
                 <div class="footerContainer">
-                    
                     <div class="footerElement">
                         <p class="footerTitle">Connect</p>
-                        <p class="footerText"><a href="https://discord.gg/XfbmXU2WY8" target="_blank"><ion-icon name="logo-discord"></ion-icon> Join our server</a></p>
-                        <p class="footerText"><a href="https://twitter.com/RumbleRoyaleGG" target="_blank"><ion-icon name="logo-twitter"></ion-icon> Follow us on Twitter</a></p>
-                        <p class="footerText"><a href="https://top.gg/bot/693167035068317736/vote" target="_blank"><ion-icon name="arrow-up-circle-sharp"></ion-icon> Vote for us on top.gg</a></p>
+                        <p class="footerText">
+                            <a href="https://discord.gg/XfbmXU2WY8" target="_blank">Discord</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="https://twitter.com/RumbleRoyaleGG" target="_blank">Twitter</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="https://top.gg/bot/693167035068317736/vote" target="_blank">Top.gg</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="contact-us.html">Contact us</a>
+                        </p>
+                    </div>
+
+                    <div class="footerElement">
+                        <p class="footerTitle">Wiki</p>
+                        <p class="footerText">
+                            <a href="eras.html" target="_blank">Eras</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="skins.html" target="_blank">Skins</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="phrases.html" target="_blank">Phrases</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="banners.html">Banners</a>
+                        </p>
+                        <p class="footerText">
+                            <a href="titles.html">Titles</a>
+                        </p>
                     </div>
 
                     <div class="footerElement">
                         <p class="footerTitle">Information</p>
                         <p class="footerText"><a href="../team.html">The RR team</a></p>
-                        <p class="footerText"><a href="../terms-privacy.html">ToS & Privacy Policy</a></p>
-                        <p class="footerText"><a href="../contact-us.html">Contact us</a></p>
+                        <p class="footerText"><a href="../terms-of-service.html">Terms of Service</a></p>
+                        <p class="footerText"><a href="../privacy-policy.html">Privacy Policy</a></p>
                     </div>
                 </div>
-    </footer>
+            </div>
+        </footer>
 
-<script src="skins.js"></script>
-<script src="../js/app.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+        <button onclick="toTop()" id="top" title="Back to top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                    d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+            </svg>
+        </button>
+
+        <script src="skins.js"></script>
+        <script src="../js/app.js"></script>
+    </body>
 </html>
