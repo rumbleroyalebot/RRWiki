@@ -1,13 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="934.379" height="819.189" viewBox="0 0 934.379 819.189">
   <defs>
     <style>
-    @font-face {
-    font-family: "GillSans-UltraBold";
-    src: url("../fonts/gillsansultrabold-webfont.woff2") format("woff2"),
-        url("../fonts/gillsansultrabold-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
+      @font-face {
+      font-family: "GillSans-UltraBold";
+      src: url("../fonts/gillsansultrabold-webfont.woff2") format("woff2"),
+           url("../fonts/gillsansultrabold-webfont.woff") format("woff");
+      }
       .a {
         isolation: isolate;
       }
@@ -77,8 +75,8 @@
       }
 
       .r {
-        font-size: 166.724px;
-        font-family: GillSans-UltraBold, Gill Sans Ultra Bold !important;
+        font-size: 163.5px;
+        font-family: GillSans-UltraBold, Gill Sans Ultra Bold;
         font-weight: 700;
       }
 
