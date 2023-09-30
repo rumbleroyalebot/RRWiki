@@ -846,24 +846,37 @@ footer {
     margin-bottom: 128px;
 }
 
-.whatsnewcontainer {
+.whatsnewcontainer,
+.newskinsContainer {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
 }
 
-.whatsnewcontainer .item {
+.whatsnewcontainer .item,
+.newskinsContainer .item {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px 0;
     font-size: 18px;
+    flex-direction: row-reverse;
 }
 
-.whatsnewcontainer .item .itemIcon img {
+.whatsnewcontainer .item .itemIcon img,
+.newskinsContainer .item .itemIcon img {
     width: 64px;
     height: 64px;
+    margin-left: 10px;
+}
+
+.newskinsContainer .item {
+    flex-direction: row;
+}
+
+.newskinsContainer .item .itemIcon img {
+    margin: 0;
     margin-right: 10px;
 }
 
