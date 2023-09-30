@@ -91,7 +91,7 @@ hr {
 .eraContainer {
     align-self: center;
     align-items: center;
-    display: inline-flex;
+    display: flex;
     margin-block-end: 20px;
 }
 
