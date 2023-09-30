@@ -433,32 +433,148 @@
             "era": "pirate",
             "cost": "gold",
             "price": 150000
+        },
+        {
+            "item": "wand",
+            "skin": "enchanted",
+            "era": "magical",
+            "cost": "gold",
+            "price": 50000
+        },
+        {
+            "item": "cauldron",
+            "skin": "enchanted",
+            "era": "magical",
+            "cost": "gold",
+            "price": 50000
+        },
+        {
+            "item": "staff",
+            "skin": "enchanted",
+            "era": "magical",
+            "cost": "gold",
+            "price": 50000
+        },
+        {
+            "item": "broom",
+            "skin": "enchanted",
+            "era": "magical",
+            "cost": "gold",
+            "price": 50000
+        },
+        {
+            "item": "khopesh",
+            "skin": "mummy",
+            "era": "egyptian",
+            "cost": "gold",
+            "price": 100000
+        },
+        {
+            "item": "sphynx",
+            "skin": "sandstorm",
+            "era": "egyptian",
+            "cost": "gold",
+            "price": 175000
+        },        {
+            "item": "sphynx",
+            "skin": "albino",
+            "era": "egyptian",
+            "cost": "gems",
+            "price": 10000
+        },
+        {
+            "item": "scepter",
+            "skin": "ra's",
+            "era": "egyptian",
+            "cost": "gold",
+            "price": 500000
+        },
+        {
+            "item": "ankh",
+            "skin": "magma",
+            "era": "egyptian",
+            "cost": "gems",
+            "price": 1000
         }
     ],
-    "event": [
+    "event": [],
+    "christmas": [
+        {
+            "item": "nunchaku",
+            "skin": "mistletoe",
+            "era": "samurai",
+            "cost": "gold",
+            "price": 25000,
+            "emoji": "<:m_n:1051914383774711828>"
+        },
+        {
+            "item": "horse",
+            "skin": "reindeer",
+            "era": "medieval",
+            "cost": "gems",
+            "price": 500,
+            "emoji": "<:r_h:922922326687891456>"
+        },
+        {
+            "item": "bomb",
+            "skin": "snowglobe",
+            "era": "pirate",
+            "cost": "gems",
+            "price": 500,
+            "emoji": "<:s_b:922922205111812156>"
+        },
+        {
+            "item": "sniper",
+            "skin": "gingerbread",
+            "era": "modern",
+            "cost": "gold",
+            "price": 15000,
+            "emoji": "<:g_s:922922065802199110>"
+        },
+        {
+            "item": "dagger",
+            "skin": "pine",
+            "era": "classic",
+            "cost": "gold",
+            "price": 10000,
+            "emoji": "<:p_d:922928550275862579>"
+        },
+        {
+            "item": "robot",
+            "skin": "snowman",
+            "era": "futuristic",
+            "cost": "gems",
+            "price": 300,
+            "emoji": "<:s_r:922922065747644516>"
+        }
     ],
-    "old_event": [
+    "halloween": [
         {
             "item": "horse",
             "skin": "zombie",
             "era": "medieval",
-            "cost": "gold",
-            "price": 50000
+            "cost": "gems",
+            "price": 500,
+            "emoji": "<:Z:902631889070854244>"
+        },
+        {
+            "item": "shield",
+            "skin": "pumpkin",
+            "era": "medieval",
+            "cost": "gems",
+            "price": 500,
+            "emoji": "<:P:902631889318322206>"
         },
         {
             "item": "lance",
             "skin": "bloody",
             "era": "medieval",
             "cost": "gold",
-            "price": 50000
-        },
-        {
-            "item": "shield",
-            "skin": "pumpkin",
-            "era": "medieval",
-            "cost": "gold",
-            "price": 50000
-        },
+            "price": 50000,
+            "emoji": "<:B:902631889297363047>"
+        }
+    ],
+    "old_old_event": [
         {
             "item": "dagger",
             "skin": "pine",

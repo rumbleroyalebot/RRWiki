@@ -3,16 +3,16 @@
 #banners img {
     margin: 3px;
     position: relative;
-    margin-left:7vw;
-    height:65px;
-    width:180px;
+    margin-left: 7vw;
+    height: 65px;
+    width: 180px;
 }
 
 #banners .bigimage {
     height: 130px;
-    width: 360px
+    width: 360px;
 }
-@media only screen and (min-width: 700px){
+@media only screen and (min-width: 700px) {
     .banner {
         height: 50px;
         width: 120px;
@@ -23,7 +23,7 @@
     }
     #banners .bigimage {
         height: 110px;
-        width: 300px
+        width: 300px;
     }
 }
 .bannerContainer {
@@ -46,15 +46,14 @@ hr {
 
 /*Banner Card Styles*/
 
-
-.cards{
+.cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-inline: 1.5vw;
 }
 
-.card{
+.card {
     background-color: #1f1f1f;
     padding: 3vh;
     border-radius: 15px;
@@ -62,27 +61,25 @@ hr {
     transition: ease-out 0.3s all;
     color: var(--silver);
     box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.241);
-    
 }
 
-.card-img{
+.card-img {
     max-width: 20vmax;
 }
 
-.card-text{
+.card-text {
     font-size: calc(0.3em + 2vmin);
     text-align: center;
     font-weight: bolder;
     color: inherit;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.775);
     transform: scale(1.15);
     transition: ease 0.3s all;
-    color:var(--white);
-    text-decoration:underline;
-    
+    color: var(--white);
+    text-decoration: underline;
 }
 
 .eraLogo {
@@ -100,4 +97,30 @@ hr {
 
 .eraName {
     font-size: calc(1.1rem + 0.7vmax);
+}
+
+.titlesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.titlesContainer li {
+    width: 33%;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+    .titlesContainer li {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .titlesContainer li {
+        width: 50%;
+        box-sizing: border-box;
+    }
 }
