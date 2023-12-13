@@ -136,15 +136,16 @@ ul {
     cursor: pointer;
     padding: 10px;
     border-radius: 10px;
-    font-size: 25px;
     text-decoration: none;
     transition: color 0.4s;
+    height: 48px;
+    width: 48px;
 }
 
 #top svg {
     fill: var(--BBlack);
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
 }
 
 #top:hover {
@@ -688,6 +689,7 @@ footer {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 2vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -703,10 +705,9 @@ footer {
 
 .footerContainer {
     width: 100%;
-    padding: 2em;
-    padding-top: 1em;
+    padding: 1rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 3fr 3fr 1fr;
 }
 
 .footerText {
@@ -734,6 +735,24 @@ footer {
 .footerElement p {
     margin-block: 10px;
 }
+
+.footerBottom {
+    margin-bottom: 2rem;
+}
+
+.footerBottom a {
+    text-decoration: none;
+    color: var(--silver);
+}
+
+.footerBottom a:nth-child(2) {
+    margin-left: 18px;
+}
+
+.byRGA {
+    display: inline-block;
+}
+
 @media only screen and (max-width: 600px) {
     .preFooter span {
         margin-left: 5px;
@@ -759,9 +778,12 @@ footer {
     .footerText p {
         line-height: 0.8;
     }
+    .byRGA {
+        margin-top: 32px;
+    }
 }
 
-/* Temporary CSS */
+/* Season 8 */
 
 .pagehero {
     position: relative;
